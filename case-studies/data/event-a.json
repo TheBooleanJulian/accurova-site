@@ -1,0 +1,59 @@
+{
+  "slug": "event-a",
+  "category": "event",
+  "title": "[PLACEHOLDER] BNI Crescendo Annual Gala \u2014 300-guest corporate event coverage",
+  "client": "[Client / chapter name]",
+  "location": "[Venue, Singapore]",
+  "date": "2026-06-15",
+  "date_display": "June 2026",
+  "services": "Event Photography, Same-day Highlights",
+  "summary": "[PLACEHOLDER] How Accurova covered a 300-guest corporate gala with two shooters and delivered a 40-shot highlight reel within 4 hours of the event ending.",
+  "cover_image": "https://picsum.photos/seed/event-a-cover/1600/900",
+  "challenge": "[PLACEHOLDER] Describe the brief: what the client needed captured (stage moments, candid networking, award presentations), the constraints (low light ballroom, tight guest list, no reshoots possible), and what 'success' looked like for them.",
+  "approach": "[PLACEHOLDER] Describe the shoot plan: number of shooters, gear used (D850 + V860III bounced flash for ambient-preserving fill), shot list priorities, coverage timeline across the event.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day \u2014 something only you would know. This is the paragraph that makes the case study relatable rather than generic.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted steps sped this up \u2014 e.g. AI culling narrowed 2,400 frames to 180 in under 20 minutes, batch retouch matched skin tones across the ballroom's mixed lighting.",
+  "stats": [
+    {
+      "num": "300+",
+      "label": "Guests covered"
+    },
+    {
+      "num": "2",
+      "label": "Shooters on site"
+    },
+    {
+      "num": "4H",
+      "label": "To first delivery"
+    },
+    {
+      "num": "180",
+      "label": "Final frames"
+    }
+  ],
+  "results": [
+    {
+      "num": "180",
+      "label": "Delivered frames"
+    },
+    {
+      "num": "4H",
+      "label": "Highlight turnaround"
+    },
+    {
+      "num": "5.0\u2605",
+      "label": "Client rating"
+    }
+  ],
+  "gallery": [
+    "https://picsum.photos/seed/event-a-1/900/1125",
+    "https://picsum.photos/seed/event-a-2/900/1125",
+    "https://picsum.photos/seed/event-a-3/900/1125",
+    "https://picsum.photos/seed/event-a-4/900/1125",
+    "https://picsum.photos/seed/event-a-5/900/1125",
+    "https://picsum.photos/seed/event-a-6/900/1125"
+  ],
+  "testimonial_quote": "[PLACEHOLDER testimonial from the client \u2014 keep it specific, not generic praise.]",
+  "testimonial_author": "[Name, Title, Company]",
+  "title_short": "BNI Crescendo Gala"
+}

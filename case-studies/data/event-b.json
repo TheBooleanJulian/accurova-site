@@ -1,0 +1,59 @@
+{
+  "slug": "event-b",
+  "category": "event",
+  "title": "[PLACEHOLDER] Product launch party \u2014 120-guest brand activation",
+  "client": "[Brand name]",
+  "location": "[Venue, Singapore]",
+  "date": "2026-04-02",
+  "date_display": "April 2026",
+  "services": "Event Photography, Product-in-context Shots",
+  "summary": "[PLACEHOLDER] Covering a brand's product launch \u2014 atmosphere shots, guest candids, and staged product-in-hand moments in one 3-hour session.",
+  "cover_image": "https://picsum.photos/seed/event-b-cover/1600/900",
+  "challenge": "[PLACEHOLDER] What made this brief different \u2014 e.g. needed both documentary event coverage AND clean product marketing shots from the same session.",
+  "approach": "[PLACEHOLDER] Split coverage plan: roaming candid pass vs. a 15-minute staged product corner with off-camera flash.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific anecdote \u2014 what went sideways, what you improvised, what the client noticed.",
+  "ai_workflow": "[PLACEHOLDER] AI-assisted culling/retouch specifics for this job.",
+  "stats": [
+    {
+      "num": "120",
+      "label": "Guests covered"
+    },
+    {
+      "num": "1",
+      "label": "Shooter on site"
+    },
+    {
+      "num": "3H",
+      "label": "Session length"
+    },
+    {
+      "num": "95",
+      "label": "Final frames"
+    }
+  ],
+  "results": [
+    {
+      "num": "95",
+      "label": "Delivered frames"
+    },
+    {
+      "num": "24H",
+      "label": "Full gallery turnaround"
+    },
+    {
+      "num": "5.0\u2605",
+      "label": "Client rating"
+    }
+  ],
+  "gallery": [
+    "https://picsum.photos/seed/event-b-1/900/1125",
+    "https://picsum.photos/seed/event-b-2/900/1125",
+    "https://picsum.photos/seed/event-b-3/900/1125",
+    "https://picsum.photos/seed/event-b-4/900/1125",
+    "https://picsum.photos/seed/event-b-5/900/1125",
+    "https://picsum.photos/seed/event-b-6/900/1125"
+  ],
+  "testimonial_quote": "[PLACEHOLDER testimonial]",
+  "testimonial_author": "[Name, Title, Company]",
+  "title_short": "Product Launch Party"
+}

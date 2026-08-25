@@ -1,0 +1,59 @@
+{
+  "slug": "portrait-b",
+  "category": "portrait",
+  "title": "[PLACEHOLDER] Personal branding portraits \u2014 solo founder session",
+  "client": "[Founder / individual name]",
+  "location": "[Studio or on-location]",
+  "date": "2026-07-01",
+  "date_display": "July 2026",
+  "services": "Personal Branding, Lifestyle Portraits",
+  "summary": "[PLACEHOLDER] A founder personal-branding session \u2014 mix of studio headshots and candid working shots for LinkedIn and a website About page.",
+  "cover_image": "https://picsum.photos/seed/portrait-b-cover/1600/900",
+  "challenge": "[PLACEHOLDER] The founder needed images that felt authentic rather than corporate-stock, across multiple use cases (LinkedIn, press, website).",
+  "approach": "[PLACEHOLDER] Two-part session: controlled studio light for the hero portrait, natural light candids in their actual workspace.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific anecdote.",
+  "ai_workflow": "[PLACEHOLDER] AI-assisted culling to find the most natural expressions across 400+ frames.",
+  "stats": [
+    {
+      "num": "2",
+      "label": "Locations"
+    },
+    {
+      "num": "2H",
+      "label": "Session length"
+    },
+    {
+      "num": "400+",
+      "label": "Frames shot"
+    },
+    {
+      "num": "30",
+      "label": "Final delivered"
+    }
+  ],
+  "results": [
+    {
+      "num": "30",
+      "label": "Delivered images"
+    },
+    {
+      "num": "48H",
+      "label": "Turnaround"
+    },
+    {
+      "num": "5.0\u2605",
+      "label": "Client rating"
+    }
+  ],
+  "gallery": [
+    "https://picsum.photos/seed/portrait-b-1/900/1125",
+    "https://picsum.photos/seed/portrait-b-2/900/1125",
+    "https://picsum.photos/seed/portrait-b-3/900/1125",
+    "https://picsum.photos/seed/portrait-b-4/900/1125",
+    "https://picsum.photos/seed/portrait-b-5/900/1125",
+    "https://picsum.photos/seed/portrait-b-6/900/1125"
+  ],
+  "testimonial_quote": "[PLACEHOLDER testimonial]",
+  "testimonial_author": "[Name, Title]",
+  "title_short": "Founder Branding Session"
+}

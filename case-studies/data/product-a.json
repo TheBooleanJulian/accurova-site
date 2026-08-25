@@ -1,0 +1,59 @@
+{
+  "slug": "product-a",
+  "category": "product",
+  "title": "[PLACEHOLDER] E-commerce catalogue shoot \u2014 60-SKU product line",
+  "client": "[Brand name]",
+  "location": "[Studio, Singapore]",
+  "date": "2026-03-20",
+  "date_display": "March 2026",
+  "services": "Product Photography, Image Retouching",
+  "summary": "[PLACEHOLDER] A clean white-background catalogue shoot for a 60-SKU product line, delivered as marketplace-ready assets.",
+  "cover_image": "https://picsum.photos/seed/product-a-cover/1600/900",
+  "challenge": "[PLACEHOLDER] Volume and consistency \u2014 60 SKUs needed identical lighting, angle, and crop specs to meet marketplace image requirements.",
+  "approach": "[PLACEHOLDER] Fixed studio rig, tethered shooting, standardized 3-angle-per-SKU coverage plan.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific anecdote \u2014 a tricky product, a reflective surface problem solved, etc.",
+  "ai_workflow": "[PLACEHOLDER] AI-assisted background cleanup and batch color correction across all 60 SKUs, cutting post time significantly versus manual masking.",
+  "stats": [
+    {
+      "num": "60",
+      "label": "SKUs shot"
+    },
+    {
+      "num": "3",
+      "label": "Angles per SKU"
+    },
+    {
+      "num": "1 Day",
+      "label": "Shoot length"
+    },
+    {
+      "num": "180",
+      "label": "Final images"
+    }
+  ],
+  "results": [
+    {
+      "num": "180",
+      "label": "Delivered images"
+    },
+    {
+      "num": "72H",
+      "label": "Full delivery"
+    },
+    {
+      "num": "5.0\u2605",
+      "label": "Client rating"
+    }
+  ],
+  "gallery": [
+    "https://picsum.photos/seed/product-a-1/900/1125",
+    "https://picsum.photos/seed/product-a-2/900/1125",
+    "https://picsum.photos/seed/product-a-3/900/1125",
+    "https://picsum.photos/seed/product-a-4/900/1125",
+    "https://picsum.photos/seed/product-a-5/900/1125",
+    "https://picsum.photos/seed/product-a-6/900/1125"
+  ],
+  "testimonial_quote": "[PLACEHOLDER testimonial]",
+  "testimonial_author": "[Name, Title, Company]",
+  "title_short": "E-commerce Catalogue"
+}

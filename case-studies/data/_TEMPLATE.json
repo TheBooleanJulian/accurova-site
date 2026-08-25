@@ -1,0 +1,43 @@
+{
+  "slug": "your-slug-here",
+  "category": "event",
+  "title": "Real title of the shoot",
+  "title_short": "Short version for breadcrumb",
+  "client": "Client name",
+  "location": "Venue / city",
+  "date": "2026-01-01",
+  "date_display": "Month Year",
+  "services": "e.g. Event Photography, Same-day Highlights",
+  "summary": "One or two sentences \u2014 this is what shows up in the link preview when you share it.",
+  "cover_image": "/assets/case-studies/your-slug-here/cover.jpg",
+  "challenge": "What the client needed and why it was hard.",
+  "approach": "How you planned and shot it.",
+  "behind_the_scenes": "A specific, human anecdote from the day.",
+  "ai_workflow": "Which AI-assisted culling/retouch/asset-management steps saved time on this job.",
+  "stats": [
+    {
+      "num": "300+",
+      "label": "Guests covered"
+    },
+    {
+      "num": "2",
+      "label": "Shooters on site"
+    }
+  ],
+  "results": [
+    {
+      "num": "180",
+      "label": "Delivered frames"
+    },
+    {
+      "num": "48H",
+      "label": "Turnaround"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/your-slug-here/1.jpg",
+    "/assets/case-studies/your-slug-here/2.jpg"
+  ],
+  "testimonial_quote": "Real client quote \u2014 specific, not generic praise.",
+  "testimonial_author": "Name, Title, Company"
+}

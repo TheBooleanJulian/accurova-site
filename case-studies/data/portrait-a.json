@@ -1,0 +1,59 @@
+{
+  "slug": "portrait-a",
+  "category": "portrait",
+  "title": "[PLACEHOLDER] Executive headshots \u2014 25-person leadership team",
+  "client": "[Company name]",
+  "location": "[Office, Singapore]",
+  "date": "2026-05-10",
+  "date_display": "May 2026",
+  "services": "Corporate Headshots, Retouching",
+  "summary": "[PLACEHOLDER] Consistent, on-brand headshots for a 25-person leadership team, shot on-site in a converted meeting room in one afternoon.",
+  "cover_image": "https://picsum.photos/seed/portrait-a-cover/1600/900",
+  "challenge": "[PLACEHOLDER] The scheduling and consistency problem \u2014 25 execs, back-to-back 10-minute slots, needing identical lighting and crop across every headshot for the website grid.",
+  "approach": "[PLACEHOLDER] Portable two-light setup, fixed camera position, standardized pose direction to keep every subject consistent.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific moment from the day.",
+  "ai_workflow": "[PLACEHOLDER] AI-assisted batch skin retouch and consistent color grade across all 25 subjects, cutting delivery time.",
+  "stats": [
+    {
+      "num": "25",
+      "label": "People shot"
+    },
+    {
+      "num": "10min",
+      "label": "Per person"
+    },
+    {
+      "num": "1",
+      "label": "Location"
+    },
+    {
+      "num": "48H",
+      "label": "Turnaround"
+    }
+  ],
+  "results": [
+    {
+      "num": "25",
+      "label": "Final headshots"
+    },
+    {
+      "num": "48H",
+      "label": "Full delivery"
+    },
+    {
+      "num": "5.0\u2605",
+      "label": "Client rating"
+    }
+  ],
+  "gallery": [
+    "https://picsum.photos/seed/portrait-a-1/900/1125",
+    "https://picsum.photos/seed/portrait-a-2/900/1125",
+    "https://picsum.photos/seed/portrait-a-3/900/1125",
+    "https://picsum.photos/seed/portrait-a-4/900/1125",
+    "https://picsum.photos/seed/portrait-a-5/900/1125",
+    "https://picsum.photos/seed/portrait-a-6/900/1125"
+  ],
+  "testimonial_quote": "[PLACEHOLDER testimonial]",
+  "testimonial_author": "[Name, Title, Company]",
+  "title_short": "Executive Headshots"
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "product-b",
+  "category": "product",
+  "title": "[PLACEHOLDER] Lifestyle product shoot \u2014 F&B brand campaign set",
+  "client": "[Brand name]",
+  "location": "[On-location, Singapore]",
+  "date": "2026-02-14",
+  "date_display": "February 2026",
+  "services": "Lifestyle Product Photography, Video Stills",
+  "summary": "[PLACEHOLDER] Styled lifestyle product photography for an F&B brand's campaign, shot on-location with props and natural light.",
+  "cover_image": "https://picsum.photos/seed/product-b-cover/1600/900",
+  "challenge": "[PLACEHOLDER] The brand needed images that felt editorial rather than catalogue \u2014 styled scenes, not white-background shots.",
+  "approach": "[PLACEHOLDER] On-location styling session with a prop and food stylist, mixed natural and gelled speedlight fill.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific anecdote from the shoot.",
+  "ai_workflow": "[PLACEHOLDER] AI-assisted culling across multiple styled variations per scene to find the strongest composition fast.",
+  "stats": [
+    {
+      "num": "8",
+      "label": "Styled scenes"
+    },
+    {
+      "num": "1",
+      "label": "Shoot day"
+    },
+    {
+      "num": "600+",
+      "label": "Frames shot"
+    },
+    {
+      "num": "40",
+      "label": "Final delivered"
+    }
+  ],
+  "results": [
+    {
+      "num": "40",
+      "label": "Delivered images"
+    },
+    {
+      "num": "72H",
+      "label": "Turnaround"
+    },
+    {
+      "num": "5.0\u2605",
+      "label": "Client rating"
+    }
+  ],
+  "gallery": [
+    "https://picsum.photos/seed/product-b-1/900/1125",
+    "https://picsum.photos/seed/product-b-2/900/1125",
+    "https://picsum.photos/seed/product-b-3/900/1125",
+    "https://picsum.photos/seed/product-b-4/900/1125",
+    "https://picsum.photos/seed/product-b-5/900/1125",
+    "https://picsum.photos/seed/product-b-6/900/1125"
+  ],
+  "testimonial_quote": "[PLACEHOLDER testimonial]",
+  "testimonial_author": "[Name, Title, Company]",
+  "title_short": "F&B Lifestyle Shoot"
+}
