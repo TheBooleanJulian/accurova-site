@@ -1,0 +1,9 @@
+# Staging site (home.accurova.com) — block all crawling until cutover.
+# When this site goes live on accurova.com, replace this file with:
+#
+#   User-agent: *
+#   Allow: /
+#   Sitemap: https://www.accurova.com/sitemap.xml
+#
+User-agent: *
+Disallow: /

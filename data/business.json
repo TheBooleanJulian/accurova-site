@@ -1,0 +1,43 @@
+{
+  "_comment": "Canonical business data source (build plan Section 17). Fields marked TODO are unverified — do not publish them as fact until confirmed by Julian. Never invent values here.",
+  "name": "Accurova",
+  "legalName": "TODO — legal/registered business name",
+  "uen": "TODO",
+  "description": "Commercial photography and visual production studio in Singapore, specializing in product, corporate, event and portrait photography with AI-enabled post-production workflows.",
+  "website": {
+    "staging": "https://home.accurova.com/",
+    "production": "https://www.accurova.com/"
+  },
+  "areaServed": "Singapore",
+  "address": "TODO",
+  "contact": {
+    "email": "TODO",
+    "phone": "TODO",
+    "whatsapp": "TODO — E.164 number for wa.me links"
+  },
+  "social": {
+    "instagram": "TODO",
+    "linkedin": "TODO",
+    "facebook": "TODO"
+  },
+  "founder": {
+    "name": "Julian",
+    "role": "TODO"
+  },
+  "reviews": {
+    "_comment": "Do not use these until pulled from a real, current source (Google Business Profile, etc). The current draft homepage has a fabricated 5.0/900 rating — must not ship.",
+    "ratingValue": null,
+    "reviewCount": null,
+    "source": "TODO"
+  },
+  "primaryServices": [
+    "Corporate Photography",
+    "Event Photography",
+    "Product Photography"
+  ],
+  "secondaryServices": [
+    "Corporate Headshots",
+    "Portrait Photography",
+    "Commercial / Lifestyle Photography"
+  ]
+}
