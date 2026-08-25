@@ -1,43 +1,77 @@
 {
-  "_comment": "Canonical business data source (build plan Section 17). Fields marked TODO are unverified — do not publish them as fact until confirmed by Julian. Never invent values here.",
+  "_comment": "Canonical business data source (build plan Section 17). Values below are real, pulled from live accurova.com on 2026-08-25 — see data/source-content-accurova-com.md for the full source and verbatim quotes. Fields still marked TODO were not published anywhere on the live site; do not invent them.",
   "name": "Accurova",
   "legalName": "TODO — legal/registered business name",
   "uen": "TODO",
-  "description": "Commercial photography and visual production studio in Singapore, specializing in product, corporate, event and portrait photography with AI-enabled post-production workflows.",
+  "tagline": "Accurova, where Accuracy meets Innovation",
+  "description": "Julian Cheung is a freelance professional photographer in Singapore with 8+ years of experience, shooting portrait (personal brand, executive, cosplay), event coverage (corporate, community, celebration), product photography (e-commerce, lifestyle, campaign), and astrophotography.",
   "website": {
     "staging": "https://home.accurova.com/",
     "production": "https://www.accurova.com/"
   },
   "areaServed": "Singapore",
-  "address": "TODO",
+  "address": "TODO — not published on the live site",
   "contact": {
-    "email": "TODO",
+    "email": "juliancheung@accurova.com",
     "phone": "TODO",
-    "whatsapp": "TODO — E.164 number for wa.me links"
+    "whatsapp": "+6598566543"
   },
   "social": {
-    "instagram": "TODO",
+    "instagram": "https://www.instagram.com/accurova/",
+    "telegram": "https://t.me/accurova",
+    "medium": "TODO — mentioned on the live site but the URL wasn't in scraped markup",
     "linkedin": "TODO",
     "facebook": "TODO"
   },
   "founder": {
-    "name": "Julian",
-    "role": "TODO"
+    "name": "Julian Cheung",
+    "role": "Freelance professional photographer, 8+ years experience"
   },
+  "equipment": ["Nikon D850", "Godox lighting"],
   "reviews": {
-    "_comment": "Do not use these until pulled from a real, current source (Google Business Profile, etc). The current draft homepage has a fabricated 5.0/900 rating — must not ship.",
+    "_comment": "No aggregate rating or review count is published anywhere on the live site — the fabricated 5.0/900 rating in the current draft must not ship. Use the 10 verbatim testimonials in source-content-accurova-com.md instead.",
     "ratingValue": null,
     "reviewCount": null,
     "source": "TODO"
   },
-  "primaryServices": [
-    "Corporate Photography",
-    "Event Photography",
-    "Product Photography"
+  "pricing": {
+    "_comment": "Real 'Rate card' from the live site, verbatim in source-content-accurova-com.md. All tiers include commercial usage rights, optimised colour-accurate post-production, opt-in photo lab printing.",
+    "currency": "SGD",
+    "tiers": [
+      {
+        "name": "Standard (Fast & Focused)",
+        "startingFrom": 250,
+        "coverage": "Up to 2 hours",
+        "delivery": "7-14 days (Accurova.AI optimised workflow)",
+        "bestFor": "Quick portraits, small events, compact product sets"
+      },
+      {
+        "name": "Enhanced (The Sweet Spot)",
+        "startingFrom": 450,
+        "coverage": "3-5 hours",
+        "delivery": "Priority delivery (faster than Standard)",
+        "bestFor": "Brand days, corporate events, bigger cosplay/portrait sets, lifestyle product shoots"
+      },
+      {
+        "name": "Deluxe (All-Day Takeover)",
+        "startingFrom": 850,
+        "coverage": "Full day",
+        "delivery": "Fastest turnaround + priority queue",
+        "bestFor": "Campaigns, major launches"
+      }
+    ]
+  },
+  "categories": [
+    "Portrait — personal brand",
+    "Portrait — executive",
+    "Portrait — cosplay",
+    "Event coverage — corporate",
+    "Event coverage — community",
+    "Event coverage — celebration",
+    "Product shoots — e-commerce",
+    "Product shoots — lifestyle",
+    "Product shoots — campaign",
+    "Astrophotography"
   ],
-  "secondaryServices": [
-    "Corporate Headshots",
-    "Portrait Photography",
-    "Commercial / Lifestyle Photography"
-  ]
+  "_positioningNote": "ACCUROVA-BUILD-PLAN.md positions Accurova as a corporate/B2B commercial studio (primary: corporate/event/product, secondary: headshots/portraits). The real live site is a freelance personal-brand photographer covering portrait/event/product/astro, with cosplay portraiture as a visible, recurring niche (4 of 10 published testimonials). These aren't fully reconciled yet — see data/source-content-accurova-com.md."
 }
