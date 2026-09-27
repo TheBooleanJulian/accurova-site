@@ -309,3 +309,24 @@
 .cs-index-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
 @media (max-width:900px){.cs-index-grid{grid-template-columns:repeat(2,1fr);}}
 @media (max-width:560px){.cs-index-grid{grid-template-columns:1fr;}}
+
+/* floating whatsapp CTA */
+.whatsapp-float{
+  position:fixed; bottom:24px; right:24px; z-index:200;
+  width:56px; height:56px; border-radius:50%;
+  background:var(--teal); color:var(--void);
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 8px 24px rgba(0,0,0,0.4);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.whatsapp-float:hover{transform:scale(1.08); box-shadow:0 10px 30px rgba(0,0,0,0.5);}
+.whatsapp-float svg{width:28px; height:28px;}
+@media (max-width:600px){.whatsapp-float{width:50px; height:50px; bottom:18px; right:18px;}}
+
+/* team grid (About page) */
+.team-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+.team-card{border:1px solid var(--line); padding:28px 22px; text-align:center;}
+.team-card .avatar{width:64px; height:64px; margin:0 auto 16px; border-radius:50%; background:var(--surface-2); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:20px; color:var(--teal);}
+.team-card h3{font-size:16px; margin-bottom:4px;}
+.team-card p{font-size:13px; color:var(--muted);}
+@media (max-width:700px){.team-grid{grid-template-columns:1fr;}}

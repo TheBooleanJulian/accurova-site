@@ -1,7 +1,7 @@
 {
   "_comment": "Canonical business data source (build plan Section 17). Values below are real, pulled from live accurova.com on 2026-08-25 — see data/source-content-accurova-com.md for the full source and verbatim quotes. Fields still marked TODO were not published anywhere on the live site; do not invent them.",
   "name": "Accurova",
-  "legalName": "TODO — legal/registered business name",
+  "legalName": "Accurova (sole proprietorship, UEN 53483334M, incorporated 2024-03-29 — per public ACRA/business-registry lookup, not the live-site scrape)",
   "uen": "53483334M",
   "tagline": "Accurova, where Accuracy meets Innovation",
   "description": "Julian Cheung is a freelance professional photographer in Singapore with 8+ years of experience, shooting portrait (personal brand, executive, cosplay), event coverage (corporate, community, celebration), product photography (e-commerce, lifestyle, campaign), and astrophotography.",
@@ -10,23 +10,32 @@
     "production": "https://www.accurova.com/"
   },
   "areaServed": "Singapore",
-  "address": "TODO — not published on the live site",
+  "address": "TODO — not published on the live site. A public ACRA/business-registry lookup does show a registered address, but it reads as a residential unit (HDB-style), not a studio/storefront — do NOT publish it on the public site without Julian explicitly confirming he wants his home address exposed. Flagged 2026-09-28, unresolved.",
+  "googleBusinessProfile": "https://www.google.com.sg/maps/place/Accurova/@1.314,103.84425,11z/data=!4m6!3m5!1s0x20835f668bc991af:0x7250f564dc3dce9e!8m2!3d1.314!4d103.84425!16s%2Fg%2F11lcf3p76n?hl=en",
   "contact": {
     "email": "juliancheung@accurova.com",
     "phone": "TODO",
     "whatsapp": "+6598566543"
   },
+  "paymentAccepted": ["PayNow"],
   "social": {
     "instagram": "https://www.instagram.com/accurova/",
     "telegram": "https://t.me/accurova",
     "medium": "TODO — mentioned on the live site but the URL wasn't in scraped markup",
-    "linkedin": "TODO",
+    "linkedin": "https://sg.linkedin.com/company/accurova",
+    "x": "https://x.com/Accurova",
     "facebook": "TODO"
   },
   "founder": {
     "name": "Julian Cheung",
     "role": "Freelance professional photographer, 8+ years experience"
   },
+  "_teamNote": "Confirmed by Julian 2026-09-28: Accurova is not solo — Shawn and Damian are real in-house photographers/videographers. No further bio detail given yet; don't invent titles or backstory beyond role.",
+  "team": [
+    {"name": "Julian Cheung", "role": "Founder / Lead Photographer"},
+    {"name": "Shawn", "role": "In-house Photographer/Videographer"},
+    {"name": "Damian", "role": "In-house Photographer/Videographer"}
+  ],
   "equipment": ["Nikon D850", "Godox lighting"],
   "accreditations": [
     {

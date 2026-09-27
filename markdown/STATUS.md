@@ -9,16 +9,28 @@
 **Branding & metadata**
 - Real logo (not text) in header/footer, favicon, and social-share `og:image` sitewide.
 - Unique `<title>`/description/OG/canonical on every real page (previously 5+ pages had none).
-- `sitemap.xml` covering all 16 real pages, ready for the `accurova.com` cutover.
+- `sitemap.xml` covering all 18 real indexable pages, ready for the `accurova.com` cutover (`/privacy/` deliberately excluded — noindex, see below).
 - `robots.txt` correctly blocks staging crawling with the swap-over instructions already written in as a comment.
 
 **Structured data**
-- `LocalBusiness` (homepage + About), `Person` (Julian, About), `BreadcrumbList` (Pricing/About/Testimonials/Contact), `FAQPage` (Pricing), `ContactPage` (Contact), `Service` (product-photography). Real UEN (`53483334M`) and the verified Singapore SME 500 Award 2026 are in the `LocalBusiness` data — linked to the ATC verification page, not stated as a bare claim.
+- `LocalBusiness` (homepage + About), `Person` (Julian, About), `BreadcrumbList` (Pricing/About/Testimonials/Contact/FAQ), `FAQPage` (Pricing, FAQ), `ContactPage` (Contact), `Service` (product-photography). Real UEN (`53483334M`), sole-proprietorship registration (per public ACRA lookup, 2024-03-29), and the verified Singapore SME 500 Award 2026 are in the `LocalBusiness` data — linked to the ATC verification page, not stated as a bare claim.
 
 **Core pages**
-- Homepage, Portfolio (index + product), Services (index + product-photography), Case Studies (index + 6 generated stories), 404/error page — all pre-existing, now updated.
-- **New this cycle:** `/about/`, `/pricing/`, `/contact/`, `/testimonials/` promoted from homepage anchors to real dedicated pages with their own URLs, matching the old Pixieset structure for eventual 301 continuity. Content is verbatim from `data/source-content-accurova-com.md`, not invented.
+- Homepage, Portfolio (index + product), Services (index + product-photography), Case Studies (index + 7 generated stories incl. Property), 404/error page — all pre-existing, now updated.
+- `/about/`, `/pricing/`, `/contact/`, `/testimonials/` promoted from homepage anchors to real dedicated pages with their own URLs, matching the old Pixieset structure for eventual 301 continuity. Content is verbatim from `data/source-content-accurova-com.md`, not invented.
+- **New this cycle:** `/faq/` (10 real Q&As, `<details>`/`FAQPage` schema) and `/privacy/` (Trust & Privacy Policy, summarized from the real live-site policy already captured in `data/source-content-accurova-com.md`, `noindex`'d as boilerplate legal content).
 - Homepage's pricing/testimonials sections trimmed to teasers linking out, to avoid duplicate content with the new pages.
+
+**Doctor Clean comparison — copied over (2026-09-28)**
+Compared the site against doctorclean.com.sg for good, honestly-applicable conversion patterns:
+- Floating WhatsApp button, sitewide (all real pages + case studies) — cheap, high-conversion, no data dependency.
+- "How It Works" 4-step process section on the homepage (Tell Us What You Need → Plan → Shoot → Edit & Deliver), matching the spec already written in `HOMEPAGE-CASESTUDY-ARCHITECTURE.md` §16 but never built.
+- `/faq/` hub with a footer link (see above).
+- Expanded homepage/About "Why Accurova" from 3 points to 5 — added the real production team and the real accreditation as genuine differentiators, matching Doctor Clean's icon-grid pattern without inventing anything (no fake "insured"/"guaranteed" claims added).
+- Team section on `/about/` — Julian, Shawn, Damian (confirmed real by Julian 2026-09-28; Accurova is not solo).
+- PayNow noted as the accepted payment method on `/pricing/` and in `business.json`.
+- Google Business Profile link captured (`business.json.googleBusinessProfile`) — Accurova has a real GBP listing; rating/review count unconfirmed (Maps is JS-rendered, couldn't be scraped in this environment).
+- Deliberately **not** copied: team/leadership bios beyond name+role (no more detail given), payment-method badge row (PayNow only, no card/GrabPay gateway), promo/discount banners, date-time booking widget, client logo wall (still no real permissions), press-mention logos (none exist) — see PLAN.md's content-integrity rule.
 
 **Internal linking & content integrity**
 - Nav/footer rewired site-wide (including case-studies, which had its own stale copy diverged from the real footer).
@@ -75,13 +87,13 @@ Four open questions from the previous update, resolved directly by Julian:
 
 ## Not started
 
-- **Resources hub, FAQ hub, pillar content, downloads, comparison pages** (PLAN.md §4) — none built. Homepage's "Insights" section is still explicitly placeholder card copy.
+- **Resources hub, pillar content, downloads, comparison pages** (PLAN.md §4) — none built. Homepage's "Insights" section is still explicitly placeholder card copy. (FAQ hub is now done — see above.)
 - **Price calculator** (PLAN.md §4 Homepage / Decision 1 above) — guest-interactable, category-specific pricing tool meant to bring pricing up to market rate. Not built. Worth doing once dedicated service pages exist to route into.
 - **Image SEO** (PLAN.md §5) — nearly every image on the site is still a `picsum.photos` placeholder, not a real delivered photograph. Filenames, alt text, `srcset`, lazy-loading strategy all depend on real images existing first — doing this now would just be optimizing placeholder filenames.
 - **Analytics & attribution** (PLAN.md §6) — no GA4 or equivalent configured, no UTM/CTA-click tracking, no lead-source capture. Needs Julian's analytics account access.
 - **Migration redirect map** (PLAN.md §7) — can't build `old-urls.csv`/`redirect-map.csv` without the URL inventory above.
 - **Domain cutover** (PLAN.md §7) — pointing `accurova.com` at Zeabur, canonical host (`www` vs bare) decision, Cloudflare DNS/CDN config, `gallery.accurova.com` / `pixieset.accurova.com` setup. All Zeabur-dashboard/DNS-registrar actions, not code — needs Julian to action or explicitly delegate dashboard access.
-- **Local SEO** (Google Business Profile, physical address/UEN-on-listings consistency) — no address is published anywhere yet (`business.json` still marks it `TODO`); UEN is now known and in place everywhere else.
+- **Local SEO / GBP-website consistency** — Accurova has a real Google Business Profile (link now in `business.json`), which resolves the earlier "no GBP" gap, but the profile's rating/review count couldn't be confirmed (Google Maps is JS-rendered; blocked in this environment) and the physical address question below is still open.
 - **Accessibility audit, performance/Lighthouse pass, mobile UX pass** — not run yet; reasonable to defer until real images replace placeholders (performance numbers on placeholder images aren't representative).
 - **AI Innovation as a standalone page** — currently just a homepage section; fine as-is unless/until the business wants to push Accurova.AI as a product to other photographers (per its real public positioning) rather than just an internal-workflow mention.
 
@@ -92,7 +104,7 @@ Four open questions from the previous update, resolved directly by Julian:
 1. **Google Search Console + Analytics access** — needed for the URL inventory, baseline traffic numbers, and post-launch monitoring.
 2. **DNS/Zeabur dashboard access or action** — domain architecture (§7), actual cutover.
 3. **Real portfolio/case-study images**, including the Property Photography media mentioned in Decisions above — everything downstream (image SEO, real case studies replacing the 6 placeholders, alt text) is blocked on delivered media existing in the repo.
-4. **Physical address / legal name**, if Julian wants those published (currently correctly left as `TODO` rather than invented).
+4. **Physical/registered address — privacy decision needed, not just a missing fact.** A public ACRA/business-registry lookup (2026-09-28) shows a registered address that reads as a residential unit, not a studio. `business.json` flags this explicitly and the site does **not** publish it. Don't add it anywhere public without Julian's explicit go-ahead — this is a safety/privacy call, not a content gap to just fill in.
 
 ---
 

@@ -79,6 +79,24 @@ All packages include commercial usage rights, optimised colour-accurate post-pro
 - Instagram: https://www.instagram.com/accurova/
 - Telegram community: https://t.me/accurova
 - Medium.com: articles about photography (URL not found in scraped markup — get from Julian)
+- LinkedIn company page: https://sg.linkedin.com/company/accurova (found 2026-09-28 via search, not the original scrape)
+- X/Twitter: https://x.com/Accurova (found 2026-09-28 via search, not the original scrape)
+
+## Team (real — confirmed by Julian 2026-09-28, not from the scrape)
+
+Accurova is not a solo operation. In-house photographers/videographers **Shawn** and **Damian** work alongside Julian. No further bio/title detail given yet.
+
+## Business registration (real — public ACRA/business-registry lookup, 2026-09-28, not the live-site scrape)
+
+- Entity type: Sole Proprietor
+- Incorporation date: 2024-03-29
+- Status: Live
+- Principal activity: Photographic activities
+- A registered address is publicly listed but reads as a residential unit — **do not publish it on the site without Julian's explicit confirmation.** See `markdown/STATUS.md`'s Blocked list.
+
+## Google Business Profile (real, 2026-09-28)
+
+Accurova has a real GBP/Maps listing: https://www.google.com.sg/maps/place/Accurova/@1.314,103.84425,11z/data=!4m6!3m5!1s0x20835f668bc991af:0x7250f564dc3dce9e!8m2!3d1.314!4d103.84425!16s%2Fg%2F11lcf3p76n?hl=en — Maps is JS-rendered and couldn't be scraped in this environment, so rating/review count are unconfirmed. Link added to `data/business.json`.
 
 ## Accurova.AI (real — different from what the build plan assumes)
 

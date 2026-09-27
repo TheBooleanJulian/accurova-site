@@ -126,7 +126,7 @@ The 6 current entries (`event-a/b`, `portrait-a/b`, `product-a/b`) are placehold
 
 ### About — `/about/`
 
-✅ Built: story, Julian/photographer identity, philosophy, real accreditation (SME500 Award 2026, linked to the ATC verification page), CTA. Not yet added: team/studio photos, equipment-with-photos, a fuller AI-workflow-philosophy tie-in. Equipment should stay a supporting detail, not a major selling point — buyer should come away understanding who you are → what you do → why clients trust you → how you work.
+✅ Built: story, Julian/photographer identity, philosophy, real accreditation (SME500 Award 2026, linked to the ATC verification page), a Team section (Julian, Shawn, Damian — confirmed real 2026-09-28, Accurova is not solo), CTA. Not yet added: team/studio photos (currently text-initial avatars, not real photos), equipment-with-photos, a fuller AI-workflow-philosophy tie-in. Equipment should stay a supporting detail, not a major selling point — buyer should come away understanding who you are → what you do → why clients trust you → how you work.
 
 ### AI Innovation
 
@@ -141,13 +141,17 @@ Sub-parts, all currently unbuilt:
 - **Downloads** — card grid of practical guides/checklists/templates; open (not gated) initially.
 - **Comparison pages** (`/resources/[a]-vs-[b]/`) — two-column table + short verdict; cheap once the template exists.
 
-### FAQ Hub — `/faq/` (not built)
+### FAQ Hub — `/faq/`
 
-Semantic `<details>/<summary>` accordion, grouped by category (Pricing, Booking, Preparation, Events, Products, Corporate headshots, Delivery, Licensing/usage, Editing, AI workflow) — good for accessibility and for answer-engine extraction. Answers must be concise and factually accurate.
+✅ Built (2026-09-28): semantic `<details>/<summary>` accordion, `FAQPage` schema, 10 real Q&As covering pricing, delivery, booking lead time, travel, RAW files, cosplay, product photography, and payment method. Not yet grouped by category (Pricing, Booking, Preparation, Events, Products, Corporate headshots, Delivery, Licensing/usage, Editing, AI workflow) as originally specced — currently a single flat list, fine for the current question count but worth grouping if it grows.
 
 ### Contact — `/contact/`
 
 ✅ Built (WhatsApp + email CTA, links to pricing/portfolio). The fuller spec envisions four entry points (Book Consultation calendar, Request Quotation form, Upload a Brief, Studio Location map) plus a condensed FAQ — not yet built; current page is intentionally simpler.
+
+### Trust & Privacy Policy — `/privacy/`
+
+✅ Built (2026-09-28), `noindex`'d as boilerplate legal content. This is real, not new invention — the actual Pixieset site's nav includes "Trust & Privacy Policy" as a real page (per `data/source-content-accurova-com.md`), and its content (PDPA compliance, pre-release confidentiality, responsible-AI policy, SEP contracting standard, copyright/licensing terms, digital-product sales terms) was already captured there in summary form; this just builds it into the new site for the first time. Linked from every page's footer.
 
 ---
 
