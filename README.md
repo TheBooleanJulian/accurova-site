@@ -59,7 +59,7 @@ Then open `index.html` directly, or serve the folder with any static file server
 
 ```
 index.html                  homepage
-404.html                    not-found page
+not-found.html              not-found page (deliberately not named 404.html — Zeabur's Caddy buildpack auto-detects a root-level 404.html as an MPA error-page marker, which broke routing for "/")
 robots.txt                  blocks crawling on the staging domain
 services/                   service pages (template: services/product-photography.html)
 portfolio/                  portfolio index + project pages
