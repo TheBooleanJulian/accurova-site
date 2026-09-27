@@ -2,7 +2,7 @@
 
 # Accurova Site
 
-**Static site source for accurova.com — a commercial photography studio site.**
+**Static site source for accurova.com — Julian Cheung's Singapore photography practice.**
 
 ![HTML](https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white)
@@ -15,7 +15,7 @@
 
 ## What it does
 
-Pure HTML/CSS site for Accurova, a commercial photography studio, with no build pipeline or JS framework — deployed as static files on Zeabur. It currently runs at the staging domain `home.accurova.com` until it's ready to replace the live Pixieset marketing site; `robots.txt` blocks crawling until that cutover. See [markdown/ACCUROVA-BUILD-PLAN.md](markdown/ACCUROVA-BUILD-PLAN.md) for the full build plan, phases, and content-integrity rules — most importantly, never inventing business facts (pricing, testimonials, review counts, etc.).
+Pure HTML/CSS site for Accurova, a Singapore photography practice, with no build pipeline or JS framework — deployed as static files on Zeabur. It currently runs at the staging domain `home.accurova.com` until it's ready to replace the live Pixieset marketing site; `robots.txt` blocks crawling until that cutover. See [markdown/PLAN.md](markdown/PLAN.md) for the full build plan, page specs, and content-integrity rules — most importantly, never inventing business facts (pricing, testimonials, review counts, etc.) — and [markdown/STATUS.md](markdown/STATUS.md) for what's actually done vs. still outstanding right now.
 
 ## Features
 
@@ -78,14 +78,14 @@ partials/header.html        canonical nav, injected into every page
 partials/footer.html        canonical footer, injected into every page
 data/business.json          canonical business info — TODO fields are unverified, don't publish as fact
 assets/style.css            shared design system
-markdown/                   planning docs (build plan, site architecture, case-study README)
+markdown/                   PLAN.md (scope/specs/rules), STATUS.md (done vs. outstanding), CASE-STUDIES-GUIDE.md
 ```
 
-Full page-by-page build plan for the rest of the site (industries, resources, FAQ, about, contact, etc.) is in [markdown/site-architecture.md](markdown/site-architecture.md). The overall project plan, phases, and content-integrity rules are in [markdown/ACCUROVA-BUILD-PLAN.md](markdown/ACCUROVA-BUILD-PLAN.md).
+The full site plan — page specs, positioning, SEO/GEO/technical requirements, migration/launch checklist — is in [markdown/PLAN.md](markdown/PLAN.md). For current progress against it, see [markdown/STATUS.md](markdown/STATUS.md).
 
 ## Working with case studies
 
-Details in [markdown/README-CASE-STUDIES.md](markdown/README-CASE-STUDIES.md); short version:
+Details in [markdown/CASE-STUDIES-GUIDE.md](markdown/CASE-STUDIES-GUIDE.md); short version:
 
 ```bash
 cp case-studies/data/_TEMPLATE.json case-studies/data/<slug>.json
@@ -102,15 +102,11 @@ Zeabur's static buildpack normally auto-generates its own Caddyfile, and it does
 
 ## Status / Roadmap
 
-- [x] Shared nav/footer via include markers and `business.json` as the business-data source
-- [x] 404 page and staging `robots.txt`
-- [x] Real content pulled from the live accurova.com site, replacing earlier placeholder/fabricated copy
-- [x] Case-study generator (JSON → static HTML) with a working example set
-- [ ] Full page-by-page build out per [site-architecture.md](site-architecture.md) (industries, resources, FAQ, about, contact)
-- [ ] Cutover from the staging domain to replace the live Pixieset site, with `robots.txt` crawling re-enabled
+See [markdown/STATUS.md](markdown/STATUS.md) — kept current there rather than duplicated here.
 
 ## Changelog
 
+- **2026-09-28** — Consolidated planning docs into `markdown/PLAN.md` + `markdown/STATUS.md`; promoted About/Pricing/Contact/Testimonials to dedicated pages; fixed the Zeabur/Caddy 404 routing bug; corrected the SME500 Award 2026 accreditation (real, verified) and added the real UEN
 - **2026-08-25** — Replaced fabricated placeholder content with real content pulled from the live accurova.com site
 - **2026-08-25** — Phase 1 foundation: shared nav/footer, business data source, 404 page, staging `robots.txt`
 - **2026-08-25** — Initial commit of the Accurova site

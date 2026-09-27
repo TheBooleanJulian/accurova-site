@@ -14,9 +14,9 @@ No address or UEN is published anywhere on the live site — `data/business.json
 - Real nav structure (this is the actual IA, not the corporate one in the build plan): Home · About · Testimonials · Astrophotos · Accurova.AI · Contact · Trust & Privacy Policy
 - Positioning is **personal-brand / freelance photographer**, not a corporate B2B studio: "Look like the professional you already are. No posing experience needed. No awkward silences. Just clean, sharp images ready for LinkedIn, campaigns, and your biggest moments."
 - Categories actually shot, per the real portfolio/homepage: **Portrait** (personal brand, executive, cosplay), **Event Coverage** (corporate, community, celebration), **Product Shoots** (e-commerce, lifestyle, campaign), and **Astrophotography** (own nav item, prints for sale).
-- Cosplay portraiture is a real, significant part of the business — 4 of the 10 published testimonials are from cosplayers. This isn't in the current `ACCUROVA-BUILD-PLAN.md` positioning at all.
+- Cosplay portraiture is a real, significant part of the business — 4 of the 10 published testimonials are from cosplayers. This isn't in the current `markdown/PLAN.md` positioning at all.
 
-**⚠ Strategic note:** `ACCUROVA-BUILD-PLAN.md` positions Accurova as a corporate/B2B "commercial photography studio" (primary: Corporate/Event/Product, secondary: headshots/portraits, no mention of astro or cosplay). The real site is a freelance personal-brand photographer covering portrait/event/product/astro, with cosplay as a visible niche. These two directions don't fully agree — flagged for Julian to reconcile rather than silently resolved.
+**⚠ Strategic note:** `markdown/PLAN.md` positions Accurova as a corporate/B2B "commercial photography studio" (primary: Corporate/Event/Product, secondary: headshots/portraits, no mention of astro or cosplay). The real site is a freelance personal-brand photographer covering portrait/event/product/astro, with cosplay as a visible niche. These two directions don't fully agree — flagged for Julian to reconcile rather than silently resolved.
 
 ## About copy (verbatim, from `/about/`)
 
