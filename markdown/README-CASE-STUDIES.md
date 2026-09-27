@@ -32,7 +32,7 @@ accurova/
 │   └── index.html                ← generated, don't hand-edit
 ├── index.html                    nav + footer updated with a Case Studies link
 ├── portfolio/ , services/        unchanged
-└── generate_case_studies.py      run from this root
+└── scripts/generate_case_studies.py   run from the repo root
 ```
 
 ## Adding a real story
@@ -41,7 +41,7 @@ accurova/
 2. Fill in the real brief, process, anecdote, and testimonial. Swap the
    `picsum.photos` placeholder URLs for real delivered frames — drop images in
    `assets/case-studies/<slug>/` and point `cover_image` / `gallery` at them.
-3. `python3 generate_case_studies.py` — regenerates every page + the index
+3. `python3 scripts/generate_case_studies.py` — regenerates every page + the index
    (safe to re-run any time, including after editing an old entry).
 4. `git add -A && git commit -m "case study: wedding launch 2026" && git push`
    → Zeabur auto-deploys. Live at `accurova.com/case-studies/wedding-launch-2026/`.

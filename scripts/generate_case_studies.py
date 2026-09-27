@@ -6,7 +6,7 @@ Workflow:
   1. Copy case-studies/data/_TEMPLATE.json to a new file, e.g. event-c.json
   2. Fill in the real story + swap picsum.photos URLs for real delivered images
      (drop images in /assets/case-studies/<slug>/ and point to them)
-  3. Run: python3 generate_case_studies.py   (run from the accurova/ root)
+  3. Run: python3 scripts/generate_case_studies.py   (run from the accurova/ root)
   4. git add -A && git commit -m "case study: event-c" && git push
      -> Zeabur auto-deploys, page is live at /case-studies/event-c/
 
@@ -19,11 +19,11 @@ import re
 from pathlib import Path
 from html import escape
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).parent.parent
 DATA_DIR = ROOT / "case-studies" / "data"
 OUT_DIR = ROOT / "case-studies"
-PAGE_TEMPLATE = (OUT_DIR / "template.html").read_text()
-INDEX_TEMPLATE = (OUT_DIR / "index-template.html").read_text()
+PAGE_TEMPLATE = (OUT_DIR / "template.html").read_text(encoding="utf-8")
+INDEX_TEMPLATE = (OUT_DIR / "index-template.html").read_text(encoding="utf-8")
 
 CATEGORY_LABEL = {"event": "Event", "portrait": "Portrait", "product": "Product"}
 
@@ -33,7 +33,7 @@ def load_entries():
     for path in sorted(DATA_DIR.glob("*.json")):
         if path.stem.startswith("_"):
             continue  # skip templates like _TEMPLATE.json
-        entries.append(json.loads(path.read_text()))
+        entries.append(json.loads(path.read_text(encoding="utf-8")))
     return entries
 
 
@@ -124,10 +124,10 @@ def main():
     for entry in entries:
         page_dir = OUT_DIR / entry["slug"]
         page_dir.mkdir(parents=True, exist_ok=True)
-        (page_dir / "index.html").write_text(render_page(entry, entries))
+        (page_dir / "index.html").write_text(render_page(entry, entries), encoding="utf-8")
         print(f"  built /case-studies/{entry['slug']}/")
 
-    (OUT_DIR / "index.html").write_text(render_index(entries))
+    (OUT_DIR / "index.html").write_text(render_index(entries), encoding="utf-8")
     print(f"  built /case-studies/index.html  ({len(entries)} stories)")
 
 

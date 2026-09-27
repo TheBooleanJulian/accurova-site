@@ -1,0 +1,14 @@
+:8080 {
+	root * /usr/share/caddy
+	encode gzip
+	file_server
+
+	handle_errors {
+		@404 expression {http.error.status_code} == 404
+		handle @404 {
+			rewrite * /errors/not-found.html
+			file_server
+		}
+		respond "{http.error.status_code} {http.error.status_text}" {http.error.status_code}
+	}
+}

@@ -11,9 +11,14 @@ generate_case_studies.py) or partials/ itself.
 import pathlib
 import re
 
-ROOT_DIR = pathlib.Path(__file__).parent
+ROOT_DIR = pathlib.Path(__file__).parent.parent
 PARTIALS_DIR = ROOT_DIR / "partials"
-SKIP_DIRS = {"case-studies", "partials", ".git"}
+SKIP_DIRS = {"case-studies", "partials", ".git", "scripts"}
+
+# errors/ holds the site-wide Caddy error page, served for any missing URL at
+# any depth — it needs root-absolute links, not depth-relative ones like the
+# rest of the site, since the browser's URL never actually becomes /errors/...
+ABSOLUTE_ROOT_DIRS = {"errors"}
 
 MARKER_RE = {
     "HEADER": re.compile(
@@ -31,7 +36,10 @@ def render_partial(name: str, root_prefix: str) -> str:
 
 
 def root_prefix_for(path: pathlib.Path) -> str:
-    depth = len(path.relative_to(ROOT_DIR).parent.parts)
+    rel_parts = path.relative_to(ROOT_DIR).parts
+    if rel_parts[0] in ABSOLUTE_ROOT_DIRS:
+        return "/"
+    depth = len(rel_parts) - 1
     return "../" * depth
 
 
