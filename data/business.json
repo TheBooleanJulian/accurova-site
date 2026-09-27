@@ -10,7 +10,7 @@
     "production": "https://www.accurova.com/"
   },
   "areaServed": "Singapore",
-  "address": "TODO — not published on the live site. A public ACRA/business-registry lookup does show a registered address, but it reads as a residential unit (HDB-style), not a studio/storefront — do NOT publish it on the public site without Julian explicitly confirming he wants his home address exposed. Flagged 2026-09-28, unresolved.",
+  "address": "Deliberately withheld. Confirmed by Julian 2026-09-28: the ACRA-registered address is his real home address (home-based, no studio space yet) — he's chosen to keep it private. It stays on ACRA (a legal requirement) but must never be published on the site, in structured data, or shown via Google Business Profile. Keep using \"Singapore\" / areaServed instead — do not revisit this without Julian explicitly asking to publish it.",
   "googleBusinessProfile": "https://www.google.com.sg/maps/place/Accurova/@1.314,103.84425,11z/data=!4m6!3m5!1s0x20835f668bc991af:0x7250f564dc3dce9e!8m2!3d1.314!4d103.84425!16s%2Fg%2F11lcf3p76n?hl=en",
   "contact": {
     "email": "juliancheung@accurova.com",

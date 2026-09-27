@@ -93,7 +93,7 @@ Four open questions from the previous update, resolved directly by Julian:
 - **Analytics & attribution** (PLAN.md §6) — no GA4 or equivalent configured, no UTM/CTA-click tracking, no lead-source capture. Needs Julian's analytics account access.
 - **Migration redirect map** (PLAN.md §7) — can't build `old-urls.csv`/`redirect-map.csv` without the URL inventory above.
 - **Domain cutover** (PLAN.md §7) — pointing `accurova.com` at Zeabur, canonical host (`www` vs bare) decision, Cloudflare DNS/CDN config, `gallery.accurova.com` / `pixieset.accurova.com` setup. All Zeabur-dashboard/DNS-registrar actions, not code — needs Julian to action or explicitly delegate dashboard access.
-- **Local SEO / GBP-website consistency** — Accurova has a real Google Business Profile (link now in `business.json`), which resolves the earlier "no GBP" gap, but the profile's rating/review count couldn't be confirmed (Google Maps is JS-rendered; blocked in this environment) and the physical address question below is still open.
+- **Local SEO / GBP-website consistency** — Accurova has a real Google Business Profile (link now in `business.json`), which resolves the earlier "no GBP" gap. Rating/review count couldn't be confirmed (Google Maps is JS-rendered; blocked in this environment). Address is deliberately private (resolved, see Blocked-list history below) — Julian should confirm the GBP listing itself is set to hide the exact address (service-area business setting), since that's a dashboard setting outside what's checkable from here.
 - **Accessibility audit, performance/Lighthouse pass, mobile UX pass** — not run yet; reasonable to defer until real images replace placeholders (performance numbers on placeholder images aren't representative).
 - **AI Innovation as a standalone page** — currently just a homepage section; fine as-is unless/until the business wants to push Accurova.AI as a product to other photographers (per its real public positioning) rather than just an internal-workflow mention.
 
@@ -104,7 +104,7 @@ Four open questions from the previous update, resolved directly by Julian:
 1. **Google Search Console + Analytics access** — needed for the URL inventory, baseline traffic numbers, and post-launch monitoring.
 2. **DNS/Zeabur dashboard access or action** — domain architecture (§7), actual cutover.
 3. **Real portfolio/case-study images**, including the Property Photography media mentioned in Decisions above — everything downstream (image SEO, real case studies replacing the 6 placeholders, alt text) is blocked on delivered media existing in the repo.
-4. **Physical/registered address — privacy decision needed, not just a missing fact.** A public ACRA/business-registry lookup (2026-09-28) shows a registered address that reads as a residential unit, not a studio. `business.json` flags this explicitly and the site does **not** publish it. Don't add it anywhere public without Julian's explicit go-ahead — this is a safety/privacy call, not a content gap to just fill in.
+4. ~~Physical/registered address~~ — **resolved 2026-09-28.** Confirmed real (Julian's home, no studio yet) and confirmed private: stays on ACRA only, never published on the site or in structured data. One follow-up still worth Julian checking himself: make sure the Google Business Profile is configured as a service-area business with the exact address hidden from public view — that's a GBP dashboard setting, not something checkable from here (Maps is JS-rendered, blocked in this environment).
 
 ---
 
