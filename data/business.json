@@ -2,7 +2,7 @@
   "_comment": "Canonical business data source (build plan Section 17). Values below are real, pulled from live accurova.com on 2026-08-25 — see data/source-content-accurova-com.md for the full source and verbatim quotes. Fields still marked TODO were not published anywhere on the live site; do not invent them.",
   "name": "Accurova",
   "legalName": "TODO — legal/registered business name",
-  "uen": "TODO",
+  "uen": "53483334M",
   "tagline": "Accurova, where Accuracy meets Innovation",
   "description": "Julian Cheung is a freelance professional photographer in Singapore with 8+ years of experience, shooting portrait (personal brand, executive, cosplay), event coverage (corporate, community, celebration), product photography (e-commerce, lifestyle, campaign), and astrophotography.",
   "website": {
@@ -28,6 +28,16 @@
     "role": "Freelance professional photographer, 8+ years experience"
   },
   "equipment": ["Nikon D850", "Godox lighting"],
+  "accreditations": [
+    {
+      "name": "Singapore SME 500 Award 2026",
+      "issuer": "ATC (Accreditation and Trust Certification / atc.sg)",
+      "awardedOn": "2026-03-10",
+      "certificateNo": "26-44508",
+      "verifyUrl": "https://www.atc.sg/sg-verify-sme-business-award-status-results.php",
+      "_comment": "Confirmed real 2026-09-27 via ATC's own verification tool (screenshot showing ACCUROVA, UEN 53483334M, certificate 26-44508) — this was previously flagged as fabricated in source-content-accurova-com.md; that note is now corrected."
+    }
+  ],
   "reviews": {
     "_comment": "No aggregate rating or review count is published anywhere on the live site — the fabricated 5.0/900 rating in the current draft must not ship. Use the 10 verbatim testimonials in source-content-accurova-com.md instead.",
     "ratingValue": null,

@@ -103,11 +103,14 @@ This is **not** just an internal culling/retouching workflow tool. Per `/accurov
 - Copyright: clients get agreed licensing/usage rights on full payment; Accurova retains the right to display final publicly-released images in its portfolio unless an NDA is active.
 - Sells digital products too: Lightroom presets, CapCut templates, educational materials, via an "Accurova store" — final sale, licensed for individual use, no resale/redistribution.
 
+## Correction (2026-09-27): SME500 Award 2026 is real, not fabricated
+
+Julian confirmed via ATC's own verification tool (atc.sg) that ACCUROVA (UEN **53483334M**) holds a real **Singapore SME 500 Award 2026** accreditation, certificate no. **26-44508**, awarded 2026-03-10. It just wasn't published on the live Pixieset site at scrape time, which is why the earlier version of this note called it fabricated — that was wrong. It's now in `data/business.json` under `accreditations`, with the verification URL: https://www.atc.sg/sg-verify-sme-business-award-status-results.php. Safe to reference on the site; link to that verification page rather than restating the certificate number as an unlinked claim.
+
 ## What's confirmed fabricated in the current draft (do not keep)
 
 - "900+ shoots delivered" — no such figure appears anywhere on the real site.
 - "5.0 Google Rating" / aggregateRating of 5.0 with 900 reviews — not on the real site; no aggregate rating is published.
-- "SME500 Award 2026" — not mentioned anywhere on the real site.
 - "48H Avg. Turnaround" — real delivery is **7–14 days** (Standard tier), faster for Enhanced/Deluxe tiers but no "48 hour" figure is published.
 - The 3 fabricated placeholder testimonials ("Placeholder Name, Head of Marketing" etc.) — replace with the 10 real ones above.
 - "Featured in Straits Times, Lianhe Zaobao" — not found on the real site; homepage only says "Featured in & Trusted By" with what look like logo placeholders, no outlet named. Don't carry this claim over without confirmation.
