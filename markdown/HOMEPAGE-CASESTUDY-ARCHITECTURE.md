@@ -1,3 +1,7 @@
+> **Status note (2026-09-28, added without altering the brief below):** this is a not-yet-executed implementation plan, not historical reference — see [STATUS.md](STATUS.md) for what's actually been built against it. Two things in it need reconciling with verified facts before execution, per the content-integrity rule in [PLAN.md](PLAN.md#1-working-principles-read-first):
+> - **§13's pricing** (Event $600/$1,000/$1,800, Product $300/$600/$1,100, Portrait $250/$400/$700) conflicts with the real, verified rate card in `data/business.json` (flat $250/$450/$850 across all categories, sourced from the live site). Confirm with Julian which is current before publishing either.
+> - **§7/§20's "Property Photography"** isn't in `data/business.json`'s real service categories or in the live-site content pulled into `data/source-content-accurova-com.md` — treat as proposed/new until confirmed, not as an existing offering. The same real-site data shows Astrophotography and Cosplay as significant, currently-real categories that this brief doesn't mention at all — see the positioning tension already flagged in PLAN.md §2.
+
 # Accurova Homepage & Case Study Architecture
 
 ## Claude Code Implementation Brief

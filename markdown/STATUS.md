@@ -41,6 +41,18 @@
 
 ---
 
+## Not started — homepage/case-study architecture brief (not yet executed)
+
+[HOMEPAGE-CASESTUDY-ARCHITECTURE.md](HOMEPAGE-CASESTUDY-ARCHITECTURE.md) is a full implementation brief Julian dropped in and hasn't executed yet. None of it is built. Before starting it, two conflicts need resolving with Julian (flagged in that file's status note): its pricing figures contradict the verified real rate card, and its "Property Photography" category isn't confirmed as a real offering. Once resolved, it covers:
+
+- Case-study taxonomy fields (category/subcategories/client/location/project_type/services/duration/deliverables/featured/related_service/related_case_studies) — richer than the current `case-studies/data/*.json` schema.
+- Standalone case-study page structure (hero → project overview → brief → approach → results gallery → deliverables → testimonial → related service → CTA) and the service-page-vs-case-study distinction.
+- Quote estimator (interactive package-estimate flow — this also appears as a lighter mention in PLAN.md §4).
+- Reusable component list (`ServiceCard`, `CaseStudyCard`, `PricingCard`, `FAQ`, `CTA`, `ClientLogo`, `ProcessStep`, etc.) so new case studies don't require redesigning the site.
+- Breadcrumbs on deeper pages (Home → Portfolio → Category → Project, and Home → Services → Category) — visible + structured data. Currently only Pricing/About/Testimonials/Contact have `BreadcrumbList` JSON-LD; portfolio and services pages don't.
+- Its own FAQ topic list (cost, booking lead time, travel within Singapore, delivery time, RAW files, corporate packages, custom shot requests, night events, custom commercial quotes) — overlaps with but isn't identical to PLAN.md's FAQ list; reconcile into one list when the FAQ hub gets built.
+- "Future scalability" categories (commercial, branding, food, real estate, videography, corporate content packages, workshops, photowalks, studio rental, overseas assignments) — explicitly not to build now, just don't architect against them.
+
 ## Not started
 
 - **Resources hub, FAQ hub, pillar content, downloads, comparison pages** (PLAN.md §4) — none built. Homepage's "Insights" section is still explicitly placeholder card copy.
@@ -59,9 +71,10 @@
 
 1. **Google Search Console + Analytics access** — needed for the URL inventory, baseline traffic numbers, and post-launch monitoring.
 2. **DNS/Zeabur dashboard access or action** — domain architecture (§7), actual cutover.
-3. **Confirm the positioning question** (PLAN.md §2) — corporate-studio framing vs. the real personal-brand-with-cosplay/astro positioning the live site actually uses. This gates how much of the "10 service pages + 10 industry pages" architecture is worth building at all.
-4. **Real portfolio/case-study images** — everything downstream of this (image SEO, real case studies replacing the 6 placeholders, alt text) is blocked on delivered photographs existing in the repo.
-5. **Physical address / legal name**, if Julian wants those published (currently correctly left as `TODO` rather than invented).
+3. **Confirm the positioning question** (PLAN.md §2) — corporate-studio framing vs. the real personal-brand-with-cosplay/astro positioning the live site actually uses. This gates how much of the "10 service pages + 10 industry pages" architecture is worth building at all, and also affects whether HOMEPAGE-CASESTUDY-ARCHITECTURE.md's 5-category list (no cosplay/astro) needs revising before it's executed.
+4. **Reconcile HOMEPAGE-CASESTUDY-ARCHITECTURE.md's two flagged conflicts** — its pricing figures vs. the real rate card, and its unconfirmed "Property Photography" category — before building anything from it.
+5. **Real portfolio/case-study images** — everything downstream of this (image SEO, real case studies replacing the 6 placeholders, alt text) is blocked on delivered photographs existing in the repo.
+6. **Physical address / legal name**, if Julian wants those published (currently correctly left as `TODO` rather than invented).
 
 ---
 

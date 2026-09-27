@@ -7,6 +7,8 @@
 
 This document consolidates what were previously three overlapping files (`ACCUROVA-BUILD-PLAN.md`, `site-architecture.md`, `accurova_new_homepage_seo_geo_tasklist.md`) into one. For **what's actually built vs. still outstanding right now**, see [STATUS.md](STATUS.md) — that file tracks current state; this one stays the stable reference for scope, rules and page specs.
 
+**[HOMEPAGE-CASESTUDY-ARCHITECTURE.md](HOMEPAGE-CASESTUDY-ARCHITECTURE.md)** is a separate, not-yet-executed implementation brief (dropped in 2026-09-28, still to be built) that goes deeper than this document on the homepage and case-study system specifically — case-study taxonomy fields, the standalone case-study page structure, service-vs-case-study distinction, a quote estimator, and a reusable component list. Treat it as the authoritative deeper spec for those two areas once its two flagged conflicts (pricing figures, an unconfirmed "Property Photography" category) are reconciled with Julian.
+
 ---
 
 ## 1. Working principles (read first)
@@ -105,7 +107,7 @@ Visual evidence, not the main SEO text dump.
 - **Category pages:** short useful intro (100-150 words: what the category covers, typical use cases, typical turnaround), gallery, links to relevant case studies and service page, clear CTA. Don't create a category page with no meaningful content.
 - **Individual project pages:** title, client (only where permitted), industry/type where known, location where appropriate, deliverables, gallery, concise description, related service, related case study, enquiry CTA.
 
-**Refinement — don't split "portfolio" and "case studies" into two parallel systems.** A later planning pass concluded portfolio items work better *as* case studies rather than as separate generic category galleries: each real shoot stands alone as a complete page (service category → real case study → photographs → project context → result/deliverable → related service → enquiry CTA), demonstrating actual commercial capability rather than a bare "here are some product photos" gallery. Prefer this over building a separate thin category-page layer once enough real case studies exist to cover each category.
+**Refinement — don't split "portfolio" and "case studies" into two parallel systems.** [HOMEPAGE-CASESTUDY-ARCHITECTURE.md](HOMEPAGE-CASESTUDY-ARCHITECTURE.md) (not yet executed) argues portfolio items work better *as* case studies rather than as separate generic category galleries: each real shoot stands alone as a complete page (service category → real case study → photographs → project context → result/deliverable → related service → enquiry CTA), demonstrating actual commercial capability rather than a bare "here are some product photos" gallery. Prefer this over building a separate thin category-page layer once enough real case studies exist to cover each category. That doc also specs: a structured metadata schema per case study (category, subcategories, client, location, project type, services, duration, deliverables, featured flag, related service, related case studies — richer than the current `case-studies/data/*.json` shape), a fixed standalone-page structure (hero → project overview → the brief → the approach → results gallery → deliverables checklist → testimonial → related service → CTA), and an explicit service-page-vs-case-study distinction ("does Accurova offer this?" vs. "can Accurova actually do this?").
 
 ### Case Studies — `/case-studies/[slug]/`
 

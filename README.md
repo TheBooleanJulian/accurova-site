@@ -78,7 +78,8 @@ partials/header.html        canonical nav, injected into every page
 partials/footer.html        canonical footer, injected into every page
 data/business.json          canonical business info — TODO fields are unverified, don't publish as fact
 assets/style.css            shared design system
-markdown/                   PLAN.md (scope/specs/rules), STATUS.md (done vs. outstanding), CASE-STUDIES-GUIDE.md
+markdown/                   PLAN.md (scope/specs/rules), STATUS.md (done vs. outstanding),
+                             CASE-STUDIES-GUIDE.md, HOMEPAGE-CASESTUDY-ARCHITECTURE.md (not-yet-executed brief)
 ```
 
 The full site plan — page specs, positioning, SEO/GEO/technical requirements, migration/launch checklist — is in [markdown/PLAN.md](markdown/PLAN.md). For current progress against it, see [markdown/STATUS.md](markdown/STATUS.md).
