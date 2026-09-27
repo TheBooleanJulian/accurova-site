@@ -47,7 +47,8 @@ Four open questions from the previous update, resolved directly by Julian:
 
 ## Ready to build (content exists, just needs handoff)
 
-- **Property Photography case study** — Julian has the media ready (wide-angle DSLR stills, rectilinear 360°, 4D Kankan virtual tours, walkthrough video). Next step: get the actual files/copy into `case-studies/data/` following the workflow in `CASE-STUDIES-GUIDE.md`, and build the `/services/property-photography/` page per `PLAN.md` §4.
+- **Property Photography case study** — scaffolded: `case-studies/data/property-a.json` + `case-studies/property-a/` (generated), with a new `property` category (filter chip + label). Real image files still needed: `assets/case-studies/property-a/{cover,wide-01..04,360-01,360-02}.jpg` are placeholder graphics (clearly labeled, dark-theme-matching) — overwrite them in place with Julian's real wide-angle stills and 360 photos, same filenames, no JSON changes needed. All copy fields in the JSON are `[PLACEHOLDER]` text — needs the real brief/approach/results/testimonial. The 4D Kankan virtual tour and walkthrough video aren't wired up yet — the case-study template has no embed slot for either; that's a template change, not just a content swap, if wanted.
+- **`/services/property-photography/` page** — not built yet, per `PLAN.md` §4.
 
 ---
 

@@ -1,0 +1,41 @@
+{
+  "slug": "property-a",
+  "category": "property",
+  "title": "[PLACEHOLDER] Residential property shoot — wide-angle stills, 360s &amp; virtual tour",
+  "title_short": "Residential Property Shoot",
+  "client": "[Client / agency name]",
+  "location": "[Property address / district, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Property Photography, 360° Virtual Tour, Walkthrough Video",
+  "summary": "[PLACEHOLDER] Full property coverage — wide-angle DSLR stills, rectilinear 360° photos, a room-by-room virtual tour (4D Kankan) and a walkthrough video, delivered for listing use.",
+  "cover_image": "/assets/case-studies/property-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] What the client needed — e.g. a fast listing turnaround, tight rooms needing wide-angle correction, or a virtual tour to support remote/overseas buyers.",
+  "approach": "[PLACEHOLDER] Wide-angle DSLR coverage of every room, rectilinear-corrected 360° captures per room, stitched into a 4D Kankan virtual tour, plus a walkthrough video for listing platforms and social.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific anecdote from the shoot — lighting/weather conditions, staging, or a tricky room.",
+  "ai_workflow": "[PLACEHOLDER] AI-assisted perspective correction and HDR blending across the wide-angle set, cutting post time versus manual bracket blending.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Rooms covered"
+    },
+    {
+      "num": "[X]",
+      "label": "Delivered stills"
+    },
+    {
+      "num": "[X]",
+      "label": "360° tour stops"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/property-a/wide-01.jpg",
+    "/assets/case-studies/property-a/wide-02.jpg",
+    "/assets/case-studies/property-a/wide-03.jpg",
+    "/assets/case-studies/property-a/wide-04.jpg",
+    "/assets/case-studies/property-a/360-01.jpg",
+    "/assets/case-studies/property-a/360-02.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER testimonial]",
+  "testimonial_author": "[Name, Title, Company]"
+}

@@ -25,7 +25,7 @@ OUT_DIR = ROOT / "case-studies"
 PAGE_TEMPLATE = (OUT_DIR / "template.html").read_text(encoding="utf-8")
 INDEX_TEMPLATE = (OUT_DIR / "index-template.html").read_text(encoding="utf-8")
 
-CATEGORY_LABEL = {"event": "Event", "portrait": "Portrait", "product": "Product"}
+CATEGORY_LABEL = {"event": "Event", "portrait": "Portrait", "product": "Product", "property": "Property"}
 
 
 def load_entries():
