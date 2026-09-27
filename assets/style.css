@@ -53,8 +53,9 @@
     border-bottom:1px solid var(--line);
   }
   nav{display:flex; align-items:center; justify-content:space-between; padding:20px 32px; max-width:1320px; margin:0 auto;}
-  .logo{font-family:var(--mono); font-size:15px; letter-spacing:0.1em; font-weight:600;}
+  .logo{display:flex; align-items:center; font-family:var(--mono); font-size:15px; letter-spacing:0.1em; font-weight:600;}
   .logo span{color:var(--teal);}
+  .logo-img{height:30px; width:auto; filter:invert(1);}
   .nav-links{display:flex; gap:36px; font-size:13px; letter-spacing:0.02em;}
   .nav-links a{color:var(--muted); transition:color .2s;}
   .nav-links a:hover{color:var(--text);}
