@@ -30,16 +30,16 @@ Do not spend the project generating dozens of SEO articles before the commercial
 
 ---
 
-## 2. Positioning — unresolved tension, flag before expanding content
+## 2. Positioning — resolved 2026-09-28
 
-Two positioning directions exist in this project's own history and haven't been reconciled by Julian yet:
+Two positioning directions existed in this project's history:
 
 - **This plan's original framing:** Accurova as a corporate/B2B commercial studio. Primary: Corporate / Event / Product Photography. Secondary: Corporate Headshots, Portraits, Commercial/Lifestyle content. Accurova.AI framed as an internal workflow tool.
 - **What the live site (accurova.com, scraped 2026-08-25, see `data/source-content-accurova-com.md`) actually says:** Julian Cheung, freelance personal-brand photographer. Real nav is Home · About · Testimonials · Astrophotos · Accurova.AI · Contact · Trust & Privacy. Cosplay portraiture is a real, significant part of the business — 4 of the 10 published testimonials are from cosplayers. Accurova.AI is pitched publicly as a product for *other* photographers, not just an internal tool.
 
-**Do not silently pick one.** The current site (this repo) has resolved this pragmatically per Julian's direction as: lead with corporate/commercial credibility for B2B search intent, but keep portrait/cosplay/astro fully visible as real, named categories (see `_positioningNote` in `data/business.json`). Treat any future expansion into the fuller corporate-studio architecture below (10 service pages, 10 industry pages, pillar content) as contingent on this being explicitly confirmed with Julian first — it's a much bigger content commitment than the personal-brand framing needs.
+**Julian's decision:** corporate-first stays the primary positioning — lead with corporate/commercial credibility for B2B search intent. Portrait, product and event photography stay visible as named categories under that. Cosplay and astrophotography are real, ongoing parts of the business, but rather than getting their own top-level service pages (which would compete with the corporate framing), they're surfaced through their own dedicated case-study subpages instead — see `HOMEPAGE-CASESTUDY-ARCHITECTURE.md`'s case-studies-as-portfolio model in §4. Property/Real Estate photography is also confirmed as a real, current offering (case-study content ready — wide-angle DSLR stills, rectilinear 360°, 4D Kankan virtual tours, walkthrough video).
 
-Avoid positioning Accurova as a generic "photographer who shoots everything," but also avoid overclaiming a corporate-studio identity the real testimonials and offering don't support.
+This still means: don't build the fuller corporate-studio architecture below (10 service pages, 10 industry pages, pillar content) as a blanket assumption — build the confirmed categories (Corporate, Event, Product, Portrait, Property) as real service pages, and treat Cosplay/Astro as case-study-only categories rather than needing their own service pages too, unless that changes later.
 
 ---
 
@@ -90,24 +90,23 @@ Do not mass-produce thin location/keyword pages. Every indexable page needs a re
 
 One template, real commercial landing pages rather than one generic page. Each needs: what the service covers, suitable use cases, what clients receive, approach, sample work, related case studies, related testimonials, pricing starting point, FAQs specific to that service, CTA.
 
-Planned slugs and target intent:
+Planned slugs and target intent (per the 2026-09-28 positioning decision — corporate-first; cosplay/astro are case-study categories, not their own service pages):
 - **corporate-photography** — corporate photographer/photography Singapore, company event photography, business photography Singapore.
 - **event-photography** — corporate events, conferences, seminars, networking events, launches, company functions.
 - **product-photography** ✅ built — product catalogue, e-commerce, marketing/campaign imagery, lifestyle product photography.
-- **portrait-photography** — personal brand, executive, cosplay (per the real positioning — keep cosplay visible, don't downplay it into a footnote the way the original corporate-studio framing implied).
-- **cosplay-photography** — real, significant category per testimonials; worth its own page rather than folding into portraits only, if content depth supports it.
+- **portrait-photography** — personal brand, executive; mention cosplay as real work with a link to its case-study subpage rather than a dedicated cosplay service page.
+- **property-photography** — confirmed real offering (2026-09-28): wide-angle DSLR high-res stills, rectilinear 360° photos, room virtual tours (4D Kankan), walkthrough video. Case-study content is ready; this service page doesn't exist yet.
 
 Template sections (from the extended site-architecture spec): Hero (service name + image) → What's included (icon list) → Process (3-5 steps) → Sample gallery pulled from matching portfolio category → Pricing band ("from $X") → FAQ (3-4 Qs specific to that service) → CTA.
 
 ### Portfolio — `/portfolio/`
 
-Visual evidence, not the main SEO text dump.
+Visual evidence, not the main SEO text dump. Per the confirmed case-studies-as-portfolio model above, this becomes an index into the case studies rather than a separate gallery system:
 
-- **Index:** filter/category links — Corporate, Events, Products, Portraits, Cosplay, Astro, and other categories actually supported by real work. Same `.work-grid` masonry component at every scale.
-- **Category pages:** short useful intro (100-150 words: what the category covers, typical use cases, typical turnaround), gallery, links to relevant case studies and service page, clear CTA. Don't create a category page with no meaningful content.
-- **Individual project pages:** title, client (only where permitted), industry/type where known, location where appropriate, deliverables, gallery, concise description, related service, related case study, enquiry CTA.
+- **Index:** filter/category links — Corporate, Events, Products, Portraits, Property, Cosplay, Astro, and other categories actually supported by real work — each linking to its one flagship case study rather than a generic gallery page. Same `.work-grid` masonry component for any supplementary imagery.
+- **Individual project pages = the case studies themselves** (see below), not a separate "project page" template. Title, client (only where permitted), industry/type where known, location where appropriate, deliverables, gallery, concise description, related service, related case study, enquiry CTA — all covered by the case-study structure.
 
-**Refinement — don't split "portfolio" and "case studies" into two parallel systems.** [HOMEPAGE-CASESTUDY-ARCHITECTURE.md](HOMEPAGE-CASESTUDY-ARCHITECTURE.md) (not yet executed) argues portfolio items work better *as* case studies rather than as separate generic category galleries: each real shoot stands alone as a complete page (service category → real case study → photographs → project context → result/deliverable → related service → enquiry CTA), demonstrating actual commercial capability rather than a bare "here are some product photos" gallery. Prefer this over building a separate thin category-page layer once enough real case studies exist to cover each category. That doc also specs: a structured metadata schema per case study (category, subcategories, client, location, project type, services, duration, deliverables, featured flag, related service, related case studies — richer than the current `case-studies/data/*.json` shape), a fixed standalone-page structure (hero → project overview → the brief → the approach → results gallery → deliverables checklist → testimonial → related service → CTA), and an explicit service-page-vs-case-study distinction ("does Accurova offer this?" vs. "can Accurova actually do this?").
+**Confirmed 2026-09-28 — case studies ARE the portfolio, one flagship per category.** Don't build "portfolio" and "case studies" as two parallel systems. Per [HOMEPAGE-CASESTUDY-ARCHITECTURE.md](HOMEPAGE-CASESTUDY-ARCHITECTURE.md), each real shoot stands alone as a complete page (service category → real case study → photographs → project context → result/deliverable → related service → enquiry CTA), demonstrating actual commercial capability rather than a bare "here are some product photos" gallery — quality over quantity, one strong case study per category rather than a thin generic category-gallery layer. This applies to Cosplay and Astro too (case-study subpages, not their own service pages — see §2). That doc also specs: a structured metadata schema per case study (category, subcategories, client, location, project type, services, duration, deliverables, featured flag, related service, related case studies — richer than the current `case-studies/data/*.json` shape), a fixed standalone-page structure (hero → project overview → the brief → the approach → results gallery → deliverables checklist → testimonial → related service → CTA), and an explicit service-page-vs-case-study distinction ("does Accurova offer this?" vs. "can Accurova actually do this?").
 
 ### Case Studies — `/case-studies/[slug]/`
 

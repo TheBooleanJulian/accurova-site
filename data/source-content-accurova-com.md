@@ -14,6 +14,7 @@ No address or UEN is published anywhere on the live site — `data/business.json
 - Real nav structure (this is the actual IA, not the corporate one in the build plan): Home · About · Testimonials · Astrophotos · Accurova.AI · Contact · Trust & Privacy Policy
 - Positioning is **personal-brand / freelance photographer**, not a corporate B2B studio: "Look like the professional you already are. No posing experience needed. No awkward silences. Just clean, sharp images ready for LinkedIn, campaigns, and your biggest moments."
 - Categories actually shot, per the real portfolio/homepage: **Portrait** (personal brand, executive, cosplay), **Event Coverage** (corporate, community, celebration), **Product Shoots** (e-commerce, lifestyle, campaign), and **Astrophotography** (own nav item, prints for sale).
+- **Property/Real Estate photography** — confirmed by Julian 2026-09-28 (not from the original scrape; not visible on the live site at scrape time). Wide-angle DSLR high-resolution stills, rectilinear 360° photos, room virtual tours (4D Kankan), and walkthrough videos. Case-study content is ready but not yet built into the site.
 - Cosplay portraiture is a real, significant part of the business — 4 of the 10 published testimonials are from cosplayers. This isn't in the current `markdown/PLAN.md` positioning at all.
 
 **⚠ Strategic note:** `markdown/PLAN.md` positions Accurova as a corporate/B2B "commercial photography studio" (primary: Corporate/Event/Product, secondary: headshots/portraits, no mention of astro or cosplay). The real site is a freelance personal-brand photographer covering portrait/event/product/astro, with cosplay as a visible niche. These two directions don't fully agree — flagged for Julian to reconcile rather than silently resolved.
@@ -37,6 +38,8 @@ No address or UEN is published anywhere on the live site — `data/business.json
 Nikon D850, Godox lighting. (This matches the placeholder draft's equipment claim — that part can stay.)
 
 ## Pricing — "Rate card" (real, verbatim)
+
+**Direction from Julian, 2026-09-28 (not scraped, first-party):** this rate card is his real current pricing, deliberately set below market rate. He's planning to raise it to market rate via a new, more robust pricing model, to be delivered as a guest-interactable price calculator on the site — see `data/business.json`'s `pricing._directionNote` and `markdown/STATUS.md`.
 
 All packages include commercial usage rights, optimised colour-accurate post-production, and opt-in photo lab printing.
 

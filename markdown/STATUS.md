@@ -32,22 +32,41 @@
 
 ---
 
+## Decisions (2026-09-28)
+
+Four open questions from the previous update, resolved directly by Julian:
+
+1. **Pricing:** the flat $250/$450/$850 rate card is his real current pricing, deliberately below market. He's planning a more robust, category-specific pricing model delivered as a guest-interactable price calculator on the site (this supersedes the simpler "Quote Estimator" idea in HOMEPAGE-CASESTUDY-ARCHITECTURE.md §14). Until that ships: `/pricing/` and the homepage keep the real flat rate card; any category-specific numbers used in case-study copy must be explicitly marked as a placeholder.
+2. **Property Photography is a real, current offering** — case-study content is ready (wide-angle DSLR high-res stills, rectilinear 360° photos, room virtual tours via 4D Kankan, walkthrough video). Added to `data/business.json`'s categories. Not yet built — see "Ready to build" below.
+3. **Positioning stays corporate-first.** Cosplay and astrophotography remain real, ongoing categories but get their own case-study subpages rather than top-level service pages.
+4. **Case studies ARE the portfolio** — one flagship case study per category, not a separate generic gallery layer. Quality over quantity.
+
+`PLAN.md` §2/§4 and `HOMEPAGE-CASESTUDY-ARCHITECTURE.md`'s status note are updated to match.
+
+---
+
+## Ready to build (content exists, just needs handoff)
+
+- **Property Photography case study** — Julian has the media ready (wide-angle DSLR stills, rectilinear 360°, 4D Kankan virtual tours, walkthrough video). Next step: get the actual files/copy into `case-studies/data/` following the workflow in `CASE-STUDIES-GUIDE.md`, and build the `/services/property-photography/` page per `PLAN.md` §4.
+
+---
+
 ## Partial / in progress
 
 - **URL inventory (PLAN.md §7 / migration)** — live `accurova.com` blocks WebFetch with a 403 (Pixieset bot protection) and this environment has no outbound `curl`. Only `/` and `/testimonials/` confirmed indexed via search; `/about/`, `/pricing/`, `/portfolio/`, `/contact/`, `/accurova-ai/` are believed to exist (per the tasklist's own list) but unconfirmed. **Needs:** Google Search Console export from Julian, or connector access.
-- **Service pages (PLAN.md §4)** — only `product-photography.html` exists as a worked example. `corporate-photography`, `event-photography`, `portrait-photography`, `cosplay-photography` are specced but not built.
+- **Service pages (PLAN.md §4)** — only `product-photography.html` exists as a worked example. `corporate-photography`, `event-photography`, `portrait-photography`, `property-photography` are specced but not built.
 - **Testimonials contextual placement** — the 10 real testimonials live on `/testimonials/` and 3 appear on the homepage; not yet cross-linked onto relevant service/case-study pages.
 - **About page** — story + accreditation done; team/studio photos and equipment-with-photos not added.
 
 ---
 
-## Not started — homepage/case-study architecture brief (not yet executed)
+## Not started — homepage/case-study architecture brief (conflicts resolved, not yet executed)
 
-[HOMEPAGE-CASESTUDY-ARCHITECTURE.md](HOMEPAGE-CASESTUDY-ARCHITECTURE.md) is a full implementation brief Julian dropped in and hasn't executed yet. None of it is built. Before starting it, two conflicts need resolving with Julian (flagged in that file's status note): its pricing figures contradict the verified real rate card, and its "Property Photography" category isn't confirmed as a real offering. Once resolved, it covers:
+[HOMEPAGE-CASESTUDY-ARCHITECTURE.md](HOMEPAGE-CASESTUDY-ARCHITECTURE.md) is a full implementation brief Julian dropped in; both flagged conflicts are now resolved (see Decisions above), but none of it is built yet. It covers:
 
 - Case-study taxonomy fields (category/subcategories/client/location/project_type/services/duration/deliverables/featured/related_service/related_case_studies) — richer than the current `case-studies/data/*.json` schema.
 - Standalone case-study page structure (hero → project overview → brief → approach → results gallery → deliverables → testimonial → related service → CTA) and the service-page-vs-case-study distinction.
-- Quote estimator (interactive package-estimate flow — this also appears as a lighter mention in PLAN.md §4).
+- Price calculator (per Decision 1 above — a fuller build than the brief's original "Quote Estimator" sketch).
 - Reusable component list (`ServiceCard`, `CaseStudyCard`, `PricingCard`, `FAQ`, `CTA`, `ClientLogo`, `ProcessStep`, etc.) so new case studies don't require redesigning the site.
 - Breadcrumbs on deeper pages (Home → Portfolio → Category → Project, and Home → Services → Category) — visible + structured data. Currently only Pricing/About/Testimonials/Contact have `BreadcrumbList` JSON-LD; portfolio and services pages don't.
 - Its own FAQ topic list (cost, booking lead time, travel within Singapore, delivery time, RAW files, corporate packages, custom shot requests, night events, custom commercial quotes) — overlaps with but isn't identical to PLAN.md's FAQ list; reconcile into one list when the FAQ hub gets built.
@@ -56,7 +75,7 @@
 ## Not started
 
 - **Resources hub, FAQ hub, pillar content, downloads, comparison pages** (PLAN.md §4) — none built. Homepage's "Insights" section is still explicitly placeholder card copy.
-- **Quote estimator** (PLAN.md §4 Homepage) — interactive package-estimate flow, not built. Worth doing once dedicated service pages exist to route into.
+- **Price calculator** (PLAN.md §4 Homepage / Decision 1 above) — guest-interactable, category-specific pricing tool meant to bring pricing up to market rate. Not built. Worth doing once dedicated service pages exist to route into.
 - **Image SEO** (PLAN.md §5) — nearly every image on the site is still a `picsum.photos` placeholder, not a real delivered photograph. Filenames, alt text, `srcset`, lazy-loading strategy all depend on real images existing first — doing this now would just be optimizing placeholder filenames.
 - **Analytics & attribution** (PLAN.md §6) — no GA4 or equivalent configured, no UTM/CTA-click tracking, no lead-source capture. Needs Julian's analytics account access.
 - **Migration redirect map** (PLAN.md §7) — can't build `old-urls.csv`/`redirect-map.csv` without the URL inventory above.
@@ -71,10 +90,8 @@
 
 1. **Google Search Console + Analytics access** — needed for the URL inventory, baseline traffic numbers, and post-launch monitoring.
 2. **DNS/Zeabur dashboard access or action** — domain architecture (§7), actual cutover.
-3. **Confirm the positioning question** (PLAN.md §2) — corporate-studio framing vs. the real personal-brand-with-cosplay/astro positioning the live site actually uses. This gates how much of the "10 service pages + 10 industry pages" architecture is worth building at all, and also affects whether HOMEPAGE-CASESTUDY-ARCHITECTURE.md's 5-category list (no cosplay/astro) needs revising before it's executed.
-4. **Reconcile HOMEPAGE-CASESTUDY-ARCHITECTURE.md's two flagged conflicts** — its pricing figures vs. the real rate card, and its unconfirmed "Property Photography" category — before building anything from it.
-5. **Real portfolio/case-study images** — everything downstream of this (image SEO, real case studies replacing the 6 placeholders, alt text) is blocked on delivered photographs existing in the repo.
-6. **Physical address / legal name**, if Julian wants those published (currently correctly left as `TODO` rather than invented).
+3. **Real portfolio/case-study images**, including the Property Photography media mentioned in Decisions above — everything downstream (image SEO, real case studies replacing the 6 placeholders, alt text) is blocked on delivered media existing in the repo.
+4. **Physical address / legal name**, if Julian wants those published (currently correctly left as `TODO` rather than invented).
 
 ---
 

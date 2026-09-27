@@ -46,6 +46,7 @@
   },
   "pricing": {
     "_comment": "Real 'Rate card' from the live site, verbatim in source-content-accurova-com.md. All tiers include commercial usage rights, optimised colour-accurate post-production, opt-in photo lab printing.",
+    "_directionNote": "Confirmed by Julian 2026-09-28: this flat rate card is his current real, live pricing, deliberately set below market rate. Plan is to raise pricing to market rate via a new, more robust pricing model, delivered as a guest-interactable price calculator on the site (this absorbs/supersedes the simpler 'Quote Estimator' concept in markdown/HOMEPAGE-CASESTUDY-ARCHITECTURE.md §14). Until that calculator ships, this flat rate card remains the one real, publishable price on /pricing/ and the homepage. Any category-specific pricing shown in case studies before the calculator ships must be clearly marked as a placeholder, not stated as Accurova's current rates.",
     "currency": "SGD",
     "tiers": [
       {
@@ -81,7 +82,8 @@
     "Product shoots — e-commerce",
     "Product shoots — lifestyle",
     "Product shoots — campaign",
-    "Astrophotography"
+    "Astrophotography",
+    "Property/Real Estate — wide-angle DSLR high-resolution stills, rectilinear 360° photos, room virtual tours (4D Kankan), walkthrough videos"
   ],
-  "_positioningNote": "Resolved 2026-08-25: blend both directions. Lead with corporate/commercial credibility for B2B search intent, but keep portrait/cosplay/astro fully visible as real, named categories rather than downplaying them (per Julian). Applied on the homepage, services index and product-photography page. See data/source-content-accurova-com.md for the full real-content source."
+  "_positioningNote": "Resolved 2026-08-25, refined 2026-09-28: corporate/commercial credibility leads (primary positioning, per Julian). Portrait/product/event stay visible as named categories under that. Cosplay and astrophotography are real, ongoing categories but are represented via their own dedicated case-study subpages rather than top-level service pages — not downplayed, just surfaced through the case-studies system instead of the primary nav/service hierarchy. Property/Real Estate confirmed 2026-09-28 as a real, current offering with case-study content ready to build (wide-angle DSLR stills, rectilinear 360s, 4D Kankan virtual tours, walkthrough video) — not yet in the codebase. See data/source-content-accurova-com.md for the full real-content source."
 }
