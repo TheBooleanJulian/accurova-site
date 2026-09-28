@@ -33,6 +33,7 @@ Compared the site against doctorclean.com.sg for good, honestly-applicable conve
 - Deliberately **not** copied: team/leadership bios beyond name+role (no more detail given), payment-method badge row (PayNow only, no card/GrabPay gateway), promo/discount banners, date-time booking widget, client logo wall (still no real permissions), press-mention logos (none exist) — see PLAN.md's content-integrity rule.
 
 **Internal linking & content integrity**
+- Header simplified 2026-09-28: 4 grouped nav items + single Book Consult CTA, working mobile menu. Portfolio filter rebuilt as two-level categories/sub-filters incl. Video; tiles are still placeholders tagged to the new taxonomy, and empty categories show an empty-state. Portfolio meta/title and footer links updated.
 - Nav/footer rewired site-wide (including case-studies, which had its own stale copy diverged from the real footer).
 - Removed a fabricated "SME500 Award 2026" line from the case-studies footer, then correctly reinstated it once confirmed real (see `data/source-content-accurova-com.md`'s correction note) — same footer/business.json now agree everywhere.
 - Full sitewide link-check script run twice; zero broken internal links across all real pages.

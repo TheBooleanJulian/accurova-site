@@ -23,9 +23,15 @@ Pure HTML/CSS site for Accurova, a Singapore photography practice, with no build
 - Case studies generated from JSON source-of-truth files (`case-studies/data/*.json`) via `scripts/generate_case_studies.py`, so each story's page is never hand-edited directly
 - `data/business.json` as the canonical source for business info, with unverified fields explicitly marked so nothing gets published as fact prematurely
 - Design system (`assets/style.css`) built on a void/teal/gold palette with Space Grotesk for display type and JetBrains Mono for labels/data
+- Header is 4 grouped items (Work / Services / Pricing / About, CSS-only dropdowns) plus a single Book Consult CTA; the hamburger menu is a few lines of inline JS in the partial
+- Portfolio filter is two-level (top-level category chips → sub-chips), tagged per tile with `data-cat` / `data-tag`; see [portfolio/index.html](portfolio/index.html). Deep-link a category with `portfolio/index.html#video`
 - Dedicated service, portfolio, and case-study sections, each following a consistent template/component pattern (`.work-grid`, `.meta-row`, `.filter-chip`, `.cta-band`, etc.)
 - `robots.txt` blocking crawling on the staging domain until the real cutover
 - Custom `Caddyfile` at the repo root, overriding Zeabur's auto-generated one so `errors/not-found.html` is wired up correctly as the 404 handler (see Deploy below)
+
+### Adding a portfolio tile
+
+Copy an existing `.work-item` in `portfolio/index.html` and set `data-cat` (top-level category: `commercial`, `corporate`, `events`, `people`, `sports`, `aerial`, `creative`, `video`) and `data-tag` (sub-filter slug matching a sub-chip's `data-tag`). Both accept several space-separated values, so a wedding video can be `data-cat="events video" data-tag="weddings event-videography"`. Categories with no tiles show an "being added" message rather than an empty grid. To add or rename a category or sub-filter, edit the chip rows above the grid — the filter script needs no changes.
 
 ## Tech Stack
 
@@ -107,6 +113,7 @@ See [markdown/STATUS.md](markdown/STATUS.md) — kept current there rather than 
 
 ## Changelog
 
+- **2026-09-28** — Simplified the header (9 links + 2 CTAs → 4 grouped items + 1 CTA, working mobile menu); portfolio filter reorganised into 9 top-level categories with sub-filters incl. Video; portfolio meta/title and footer updated to match
 - **2026-09-28** — Consolidated planning docs into `markdown/PLAN.md` + `markdown/STATUS.md`; promoted About/Pricing/Contact/Testimonials to dedicated pages; fixed the Zeabur/Caddy 404 routing bug; corrected the SME500 Award 2026 accreditation (real, verified) and added the real UEN
 - **2026-08-25** — Replaced fabricated placeholder content with real content pulled from the live accurova.com site
 - **2026-08-25** — Phase 1 foundation: shared nav/footer, business data source, 404 page, staging `robots.txt`

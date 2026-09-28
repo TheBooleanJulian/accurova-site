@@ -42,22 +42,47 @@
 <header>
   <nav>
     <a href="../../index.html" class="logo"><img src="../../assets/Logo/Accurova%20RTB%20Banner%20trans%20v1.png" alt="Accurova" class="logo-img"></a>
-    <div class="nav-links">
-      <a href="../../portfolio/index.html">Portfolio</a>
-      <a href="../../services/index.html">Services</a>
-      <a href="../../index.html#industries">Industries</a>
-      <a href="../../index.html#ai">AI Workflow</a>
+    <div class="nav-links" id="nav-links">
+      <div class="nav-group">
+        <a href="../../portfolio/index.html" class="nav-parent">Work</a>
+        <div class="nav-menu">
+          <a href="../../portfolio/index.html">Portfolio</a>
+          <a href="../../case-studies/index.html">Case Studies</a>
+          <a href="../../testimonials/index.html">Testimonials</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="../../services/index.html" class="nav-parent">Services</a>
+        <div class="nav-menu">
+          <a href="../../services/index.html">Services</a>
+          <a href="../../index.html#industries">Industries</a>
+          <a href="../../index.html#ai">AI Workflow</a>
+        </div>
+      </div>
       <a href="../../pricing/index.html">Pricing</a>
-      <a href="../index.html">Case Studies</a>
-      <a href="../../testimonials/index.html">Testimonials</a>
-      <a href="../../about/index.html">About</a>
+      <div class="nav-group">
+        <a href="../../about/index.html" class="nav-parent">About</a>
+        <div class="nav-menu">
+          <a href="../../about/index.html">About</a>
+          <a href="../../index.html#insights">Resources</a>
+          <a href="../../faq/index.html">FAQ</a>
+        </div>
+      </div>
     </div>
     <div class="nav-cta">
-      <a href="../../contact/index.html" class="btn btn-ghost">Request Quote</a>
       <a href="../../contact/index.html" class="btn btn-solid">Book Consult</a>
     </div>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
   </nav>
+  <script>
+    (function () {
+      var h = document.currentScript.parentNode;
+      var t = h.querySelector('.nav-toggle');
+      t.addEventListener('click', function () {
+        t.setAttribute('aria-expanded', h.classList.toggle('nav-open'));
+      });
+    })();
+  </script>
 </header>
 
 <div class="wrap">
@@ -170,7 +195,7 @@
     <div class="footer-grid">
       <div>
         <a href="../../index.html" class="logo"><img src="../../assets/Logo/Accurova%20RTB%20Banner%20trans%20v1.png" alt="Accurova" class="logo-img"></a>
-        <p class="muted" style="margin-top:16px; font-size:13.5px; max-width:260px;">Julian Cheung — freelance photographer, Singapore. Corporate, event, product, portrait and astrophotography.</p>
+        <p class="muted" style="margin-top:16px; font-size:13.5px; max-width:260px;">Julian Cheung — freelance photographer, Singapore. Photo and video — product, corporate, events, portraits, sports, drone and astrophotography.</p>
         <p style="margin-top:12px; font-size:12px; font-family:var(--mono);">
           <a href="https://www.instagram.com/accurova/" target="_blank" rel="noopener" style="color:var(--muted);">Instagram</a> ·
           <a href="https://t.me/accurova" target="_blank" rel="noopener" style="color:var(--muted);">Telegram</a>
@@ -181,6 +206,8 @@
         <ul>
           <li><a href="../../portfolio/index.html">All Work</a></li>
           <li><a href="../../portfolio/product.html">Product</a></li>
+          <li><a href="../../portfolio/index.html#events">Events &amp; Celebrations</a></li>
+          <li><a href="../../portfolio/index.html#video">Video</a></li>
         </ul>
       </div>
       <div>
@@ -196,7 +223,7 @@
         <h4>Resources</h4>
         <ul>
           <li><a href="../../index.html#insights">Guides</a></li>
-          <li><a href="../index.html">Case Studies</a></li>
+          <li><a href="../../case-studies/index.html">Case Studies</a></li>
           <li><a href="../../testimonials/index.html">Testimonials</a></li>
           <li><a href="../../faq/index.html">FAQ</a></li>
           <li><a href="../../about/index.html">About</a></li>
@@ -216,6 +243,7 @@
 <a href="https://wa.me/6598566543" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.372 3 4 8.373 4 15.002c0 2.386.69 4.606 1.885 6.47L4 29l7.73-1.834a11.94 11.94 0 0 0 4.27.79H16c6.629 0 12-5.373 12-12.001C28 8.373 22.63 3 16.001 3zm0 21.6a9.55 9.55 0 0 1-4.868-1.34l-.349-.207-4.59 1.09 1.11-4.472-.228-.362a9.56 9.56 0 0 1-1.475-5.107c0-5.29 4.31-9.6 9.6-9.6 5.29 0 9.6 4.31 9.6 9.6 0 5.29-4.31 9.398-9.6 9.398zm5.267-7.19c-.288-.144-1.706-.842-1.97-.938-.264-.096-.457-.144-.649.144-.192.288-.744.938-.913 1.13-.168.192-.336.216-.624.072-.288-.144-1.218-.449-2.32-1.432-.858-.766-1.437-1.71-1.605-1.998-.168-.288-.018-.444.15-.588.144-.144.32-.372.48-.558.16-.187.213-.32.32-.532.107-.212.053-.396-.036-.556-.09-.16-.702-1.692-.964-2.317-.256-.617-.517-.534-.71-.544-.183-.01-.394-.012-.606-.012-.212 0-.556.08-.85.4-.294.32-1.12 1.096-1.12 2.672 0 1.577 1.147 3.098 1.307 3.31.16.212 2.202 3.363 5.34 4.58 3.14 1.216 3.14.812 3.706.76.566-.053 1.823-.744 2.08-1.462.256-.717.256-1.332.18-1.462-.077-.13-.288-.208-.576-.352z"/></svg>
 </a>
+
 
 </body>
 </html>

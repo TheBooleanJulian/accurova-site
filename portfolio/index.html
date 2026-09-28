@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="../assets/Logo/accurova_path_v1_favicon_300.png">
-<title>Portfolio — Corporate, Event, Product &amp; Portrait Photography | Accurova</title>
-<meta name="description" content="Portfolio of corporate &amp; event coverage, product photography, personal-brand &amp; executive portraits, cosplay portraiture and astrophotography by Julian Cheung, Singapore.">
+<title>Portfolio — Photography &amp; Videography | Accurova</title>
+<meta name="description" content="Accurova portfolio — product, corporate and event photography, weddings, portraits, sports, drone and 360 virtual tours, astrophotography and videography by Julian Cheung, Singapore.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Portfolio — Corporate, Event, Product &amp; Portrait Photography | Accurova">
-<meta property="og:description" content="Portfolio of corporate &amp; event coverage, product photography, personal-brand &amp; executive portraits, cosplay portraiture and astrophotography by Julian Cheung, Singapore.">
+<meta property="og:title" content="Portfolio — Photography &amp; Videography | Accurova">
+<meta property="og:description" content="Accurova portfolio — product, corporate and event photography, weddings, portraits, sports, drone and 360 virtual tours, astrophotography and videography by Julian Cheung, Singapore.">
 <meta property="og:image" content="../assets/Logo/Accurova%20RTB%20Banner%20v1.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://www.accurova.com/portfolio/">
@@ -23,23 +23,47 @@
 <header>
   <nav>
     <a href="../index.html" class="logo"><img src="../assets/Logo/Accurova%20RTB%20Banner%20trans%20v1.png" alt="Accurova" class="logo-img"></a>
-    <div class="nav-links">
-      <a href="../portfolio/index.html">Portfolio</a>
-      <a href="../services/index.html">Services</a>
-      <a href="../index.html#industries">Industries</a>
-      <a href="../index.html#ai">AI Workflow</a>
+    <div class="nav-links" id="nav-links">
+      <div class="nav-group">
+        <a href="../portfolio/index.html" class="nav-parent">Work</a>
+        <div class="nav-menu">
+          <a href="../portfolio/index.html">Portfolio</a>
+          <a href="../case-studies/index.html">Case Studies</a>
+          <a href="../testimonials/index.html">Testimonials</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="../services/index.html" class="nav-parent">Services</a>
+        <div class="nav-menu">
+          <a href="../services/index.html">Services</a>
+          <a href="../index.html#industries">Industries</a>
+          <a href="../index.html#ai">AI Workflow</a>
+        </div>
+      </div>
       <a href="../pricing/index.html">Pricing</a>
-      <a href="../case-studies/index.html">Case Studies</a>
-      <a href="../testimonials/index.html">Testimonials</a>
-      <a href="../index.html#insights">Resources</a>
-      <a href="../about/index.html">About</a>
+      <div class="nav-group">
+        <a href="../about/index.html" class="nav-parent">About</a>
+        <div class="nav-menu">
+          <a href="../about/index.html">About</a>
+          <a href="../index.html#insights">Resources</a>
+          <a href="../faq/index.html">FAQ</a>
+        </div>
+      </div>
     </div>
     <div class="nav-cta">
-      <a href="../contact/index.html" class="btn btn-ghost">Request Quote</a>
       <a href="../contact/index.html" class="btn btn-solid">Book Consult</a>
     </div>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
   </nav>
+  <script>
+    (function () {
+      var h = document.currentScript.parentNode;
+      var t = h.querySelector('.nav-toggle');
+      t.addEventListener('click', function () {
+        t.setAttribute('aria-expanded', h.classList.toggle('nav-open'));
+      });
+    })();
+  </script>
 </header>
 <!--/INCLUDE:HEADER-->
 
@@ -49,38 +73,92 @@
 
 <section class="page-hero wrap">
   <p class="eyebrow">Portfolio</p>
-  <h1>Corporate, event, product, portrait and astro work.</h1>
-  <p class="lede">Every category below is real work Julian shoots — filter to see corporate/community event coverage, product shoots, personal-brand and cosplay portraiture, and astrophotography.</p>
+  <h1>Photo and video, for every kind of shoot.</h1>
+  <p class="lede">From product and corporate coverage to weddings, sports, drone and astrophotography — pick a category to see the work, then narrow it down.</p>
 </section>
 
 <section class="wrap">
-  <div class="filter-row">
-    <span class="filter-chip active">All</span>
-    <span class="filter-chip">Product</span>
-    <span class="filter-chip">Corporate Event</span>
-    <span class="filter-chip">Community Event</span>
-    <span class="filter-chip">Executive Portrait</span>
-    <span class="filter-chip">Personal Brand</span>
-    <span class="filter-chip">Cosplay</span>
-    <span class="filter-chip">Lifestyle</span>
-    <span class="filter-chip">Campaign</span>
-    <span class="filter-chip">Astro</span>
+  <div class="filter-row" id="filter-cats">
+    <button type="button" class="filter-chip active" data-cat="all">All</button>
+    <button type="button" class="filter-chip" data-cat="commercial">Commercial</button>
+    <button type="button" class="filter-chip" data-cat="corporate">Corporate</button>
+    <button type="button" class="filter-chip" data-cat="events">Events &amp; Celebrations</button>
+    <button type="button" class="filter-chip" data-cat="people">Portraits &amp; People</button>
+    <button type="button" class="filter-chip" data-cat="sports">Sports &amp; Action</button>
+    <button type="button" class="filter-chip" data-cat="aerial">Aerial &amp; Immersive</button>
+    <button type="button" class="filter-chip" data-cat="creative">Creative &amp; Science</button>
+    <button type="button" class="filter-chip" data-cat="video">Video</button>
+  </div>
+  <div class="filter-sub" data-for="commercial" hidden>
+    <button type="button" class="filter-chip" data-tag="product">Product</button>
+    <button type="button" class="filter-chip" data-tag="fandb">F&amp;B</button>
+    <button type="button" class="filter-chip" data-tag="fashion">Fashion</button>
+    <button type="button" class="filter-chip" data-tag="property">Property</button>
+    <button type="button" class="filter-chip" data-tag="marketing-campaigns">Marketing Campaigns</button>
+  </div>
+  <div class="filter-sub" data-for="corporate" hidden>
+    <button type="button" class="filter-chip" data-tag="corporate-headshots">Corporate Headshots</button>
+    <button type="button" class="filter-chip" data-tag="team-shoots">Team Shoots</button>
+    <button type="button" class="filter-chip" data-tag="corporate-events">Corporate Events</button>
+    <button type="button" class="filter-chip" data-tag="mice">MICE</button>
+    <button type="button" class="filter-chip" data-tag="galas">Galas</button>
+  </div>
+  <div class="filter-sub" data-for="events" hidden>
+    <button type="button" class="filter-chip" data-tag="weddings">Weddings</button>
+    <button type="button" class="filter-chip" data-tag="proposals">Proposals</button>
+    <button type="button" class="filter-chip" data-tag="birthdays">Birthdays</button>
+    <button type="button" class="filter-chip" data-tag="anniversaries">Anniversaries</button>
+    <button type="button" class="filter-chip" data-tag="graduation">Graduation</button>
+    <button type="button" class="filter-chip" data-tag="community-events">Community Events</button>
+    <button type="button" class="filter-chip" data-tag="bts">BTS</button>
+  </div>
+  <div class="filter-sub" data-for="people" hidden>
+    <button type="button" class="filter-chip" data-tag="portraiture">Portraiture</button>
+    <button type="button" class="filter-chip" data-tag="lifestyle">Lifestyle</button>
+    <button type="button" class="filter-chip" data-tag="cosplay">Cosplay</button>
+    <button type="button" class="filter-chip" data-tag="babies">Babies</button>
+    <button type="button" class="filter-chip" data-tag="furkids">Furkids</button>
+  </div>
+  <div class="filter-sub" data-for="sports" hidden>
+    <button type="button" class="filter-chip" data-tag="sports">Sports</button>
+    <button type="button" class="filter-chip" data-tag="motorsports">Motorsports</button>
+    <button type="button" class="filter-chip" data-tag="underwater">Underwater</button>
+  </div>
+  <div class="filter-sub" data-for="aerial" hidden>
+    <button type="button" class="filter-chip" data-tag="drone-with-ua-xhackx">Drone (with ua.xhackx)</button>
+    <button type="button" class="filter-chip" data-tag="virtual-tours">Virtual Tours</button>
+    <button type="button" class="filter-chip" data-tag="360">360</button>
+    <button type="button" class="filter-chip" data-tag="holograms">Holograms</button>
+  </div>
+  <div class="filter-sub" data-for="creative" hidden>
+    <button type="button" class="filter-chip" data-tag="astrophotos">Astrophotos</button>
+    <button type="button" class="filter-chip" data-tag="macro">Macro</button>
+  </div>
+  <div class="filter-sub" data-for="video" hidden>
+    <button type="button" class="filter-chip" data-tag="event-videography">Event Videography</button>
+    <button type="button" class="filter-chip" data-tag="product-videography">Product Videography</button>
+    <button type="button" class="filter-chip" data-tag="comedy-channel-chuckleclips">Comedy Channel (ChuckleClips)</button>
+    <button type="button" class="filter-chip" data-tag="micro-influencer-marketing-graceyuki">Micro-influencer Marketing (GraceYuki)</button>
+    <button type="button" class="filter-chip" data-tag="property-videography">Property Videography</button>
+    <button type="button" class="filter-chip" disabled>Business Marketing (DoctorClean)<small>Coming soon</small></button>
   </div>
 
-  <div class="work-grid" style="grid-auto-rows:180px;">
-    <div class="work-item span-2 row-2"><a href="product.html"><img src="https://picsum.photos/seed/pf-1/700/700" alt="[Placeholder — Product photography portfolio piece]"><span class="work-tag">Product</span></a></div>
-    <div class="work-item"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-2/400/300" alt="[Placeholder — Corporate event portfolio piece]"><span class="work-tag">Corporate Event</span></a></div>
-    <div class="work-item"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-3/400/300" alt="[Placeholder — Executive portrait portfolio piece]"><span class="work-tag">Executive Portrait</span></a></div>
-    <div class="work-item"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-4/400/300" alt="[Placeholder — Cosplay portrait portfolio piece]"><span class="work-tag">Cosplay</span></a></div>
-    <div class="work-item"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-5/400/300" alt="[Placeholder — Community event portfolio piece]"><span class="work-tag">Community Event</span></a></div>
-    <div class="work-item span-2"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-6/700/300" alt="[Placeholder — Campaign portfolio piece]"><span class="work-tag">Campaign</span></a></div>
-    <div class="work-item"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-7/400/300" alt="[Placeholder — Astrophotography portfolio piece]"><span class="work-tag">Astro</span></a></div>
-    <div class="work-item"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-8/400/300" alt="[Placeholder — Lifestyle product portfolio piece]"><span class="work-tag">Lifestyle</span></a></div>
-    <div class="work-item row-2"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-9/400/620" alt="[Placeholder — Personal brand portrait portfolio piece]"><span class="work-tag">Personal Brand</span></a></div>
-    <div class="work-item"><a href="product.html"><img src="https://picsum.photos/seed/pf-10/400/300" alt="[Placeholder — Product photography portfolio piece]"><span class="work-tag">Product</span></a></div>
-    <div class="work-item"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-11/400/300" alt="[Placeholder — Corporate event portfolio piece]"><span class="work-tag">Corporate Event</span></a></div>
-    <div class="work-item"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-12/400/300" alt="[Placeholder — Cosplay portrait portfolio piece]"><span class="work-tag">Cosplay</span></a></div>
+  <div class="work-grid" id="work-grid" style="grid-auto-rows:180px; grid-auto-flow:dense;">
+    <div data-cat="commercial" data-tag="product" class="work-item span-2 row-2"><a href="product.html"><img src="https://picsum.photos/seed/pf-1/700/700" alt="[Placeholder — Product photography portfolio piece]"><span class="work-tag">Product</span></a></div>
+    <div data-cat="corporate" data-tag="corporate-events" class="work-item"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-2/400/300" alt="[Placeholder — Corporate event portfolio piece]"><span class="work-tag">Corporate Event</span></a></div>
+    <div data-cat="corporate" data-tag="corporate-headshots" class="work-item"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-3/400/300" alt="[Placeholder — Executive portrait portfolio piece]"><span class="work-tag">Executive Portrait</span></a></div>
+    <div data-cat="people" data-tag="cosplay" class="work-item"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-4/400/300" alt="[Placeholder — Cosplay portrait portfolio piece]"><span class="work-tag">Cosplay</span></a></div>
+    <div data-cat="events" data-tag="community-events" class="work-item"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-5/400/300" alt="[Placeholder — Community event portfolio piece]"><span class="work-tag">Community Event</span></a></div>
+    <div data-cat="commercial" data-tag="marketing-campaigns" class="work-item span-2"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-6/700/300" alt="[Placeholder — Campaign portfolio piece]"><span class="work-tag">Campaign</span></a></div>
+    <div data-cat="creative" data-tag="astrophotos" class="work-item"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-7/400/300" alt="[Placeholder — Astrophotography portfolio piece]"><span class="work-tag">Astro</span></a></div>
+    <div data-cat="people" data-tag="lifestyle" class="work-item"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-8/400/300" alt="[Placeholder — Lifestyle product portfolio piece]"><span class="work-tag">Lifestyle</span></a></div>
+    <div data-cat="people" data-tag="portraiture" class="work-item row-2"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-9/400/620" alt="[Placeholder — Personal brand portrait portfolio piece]"><span class="work-tag">Personal Brand</span></a></div>
+    <div data-cat="commercial" data-tag="product" class="work-item"><a href="product.html"><img src="https://picsum.photos/seed/pf-10/400/300" alt="[Placeholder — Product photography portfolio piece]"><span class="work-tag">Product</span></a></div>
+    <div data-cat="corporate" data-tag="corporate-events" class="work-item"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-11/400/300" alt="[Placeholder — Corporate event portfolio piece]"><span class="work-tag">Corporate Event</span></a></div>
+    <div data-cat="people" data-tag="cosplay" class="work-item"><a href="../index.html#contact"><img src="https://picsum.photos/seed/pf-12/400/300" alt="[Placeholder — Cosplay portrait portfolio piece]"><span class="work-tag">Cosplay</span></a></div>
   </div>
+
+  <p class="filter-empty" id="filter-empty" hidden>Samples for this category are being added — <a href="../contact/index.html" style="color:var(--teal);">ask for a private reel</a>.</p>
 
   <p class="muted" style="text-align:center; margin-top:44px; font-size:13px; font-family:var(--mono);">[Placeholder — pagination / "Load more" control]</p>
 </section>
@@ -100,7 +178,7 @@
     <div class="footer-grid">
       <div>
         <a href="../index.html" class="logo"><img src="../assets/Logo/Accurova%20RTB%20Banner%20trans%20v1.png" alt="Accurova" class="logo-img"></a>
-        <p class="muted" style="margin-top:16px; font-size:13.5px; max-width:260px;">Julian Cheung — freelance photographer, Singapore. Corporate, event, product, portrait and astrophotography.</p>
+        <p class="muted" style="margin-top:16px; font-size:13.5px; max-width:260px;">Julian Cheung — freelance photographer, Singapore. Photo and video — product, corporate, events, portraits, sports, drone and astrophotography.</p>
         <p style="margin-top:12px; font-size:12px; font-family:var(--mono);">
           <a href="https://www.instagram.com/accurova/" target="_blank" rel="noopener" style="color:var(--muted);">Instagram</a> ·
           <a href="https://t.me/accurova" target="_blank" rel="noopener" style="color:var(--muted);">Telegram</a>
@@ -111,6 +189,8 @@
         <ul>
           <li><a href="../portfolio/index.html">All Work</a></li>
           <li><a href="../portfolio/product.html">Product</a></li>
+          <li><a href="../portfolio/index.html#events">Events &amp; Celebrations</a></li>
+          <li><a href="../portfolio/index.html#video">Video</a></li>
         </ul>
       </div>
       <div>
@@ -147,6 +227,53 @@
   <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.372 3 4 8.373 4 15.002c0 2.386.69 4.606 1.885 6.47L4 29l7.73-1.834a11.94 11.94 0 0 0 4.27.79H16c6.629 0 12-5.373 12-12.001C28 8.373 22.63 3 16.001 3zm0 21.6a9.55 9.55 0 0 1-4.868-1.34l-.349-.207-4.59 1.09 1.11-4.472-.228-.362a9.56 9.56 0 0 1-1.475-5.107c0-5.29 4.31-9.6 9.6-9.6 5.29 0 9.6 4.31 9.6 9.6 0 5.29-4.31 9.398-9.6 9.398zm5.267-7.19c-.288-.144-1.706-.842-1.97-.938-.264-.096-.457-.144-.649.144-.192.288-.744.938-.913 1.13-.168.192-.336.216-.624.072-.288-.144-1.218-.449-2.32-1.432-.858-.766-1.437-1.71-1.605-1.998-.168-.288-.018-.444.15-.588.144-.144.32-.372.48-.558.16-.187.213-.32.32-.532.107-.212.053-.396-.036-.556-.09-.16-.702-1.692-.964-2.317-.256-.617-.517-.534-.71-.544-.183-.01-.394-.012-.606-.012-.212 0-.556.08-.85.4-.294.32-1.12 1.096-1.12 2.672 0 1.577 1.147 3.098 1.307 3.31.16.212 2.202 3.363 5.34 4.58 3.14 1.216 3.14.812 3.706.76.566-.053 1.823-.744 2.08-1.462.256-.717.256-1.332.18-1.462-.077-.13-.288-.208-.576-.352z"/></svg>
 </a>
 <!--/INCLUDE:FOOTER-->
+
+<script>
+(function () {
+  var cats = document.getElementById('filter-cats');
+  var subs = document.querySelectorAll('.filter-sub');
+  var items = document.querySelectorAll('#work-grid .work-item');
+  var empty = document.getElementById('filter-empty');
+  var cat = 'all', tag = null;
+
+  function has(el, key, val) { return (el.getAttribute(key) || '').split(' ').indexOf(val) > -1; }
+
+  function apply() {
+    var shown = 0;
+    items.forEach(function (it) {
+      var ok = cat === 'all' || (has(it, 'data-cat', cat) && (!tag || has(it, 'data-tag', tag)));
+      it.hidden = !ok;
+      if (ok) shown++;
+    });
+    empty.hidden = shown > 0;
+    cats.querySelectorAll('.filter-chip').forEach(function (b) {
+      b.classList.toggle('active', b.dataset.cat === cat);
+    });
+    subs.forEach(function (row) {
+      row.hidden = row.dataset['for'] !== cat;
+      row.querySelectorAll('.filter-chip').forEach(function (b) {
+        b.classList.toggle('active', !!tag && b.dataset.tag === tag);
+      });
+    });
+  }
+
+  var start = cats.querySelector('[data-cat="' + location.hash.slice(1) + '"]');
+  if (start) { cat = start.dataset.cat; apply(); }
+
+  cats.addEventListener('click', function (e) {
+    var b = e.target.closest('.filter-chip');
+    if (!b) return;
+    cat = b.dataset.cat; tag = null; apply();
+  });
+  subs.forEach(function (row) {
+    row.addEventListener('click', function (e) {
+      var b = e.target.closest('.filter-chip');
+      if (!b || b.disabled) return;
+      tag = tag === b.dataset.tag ? null : b.dataset.tag; apply();
+    });
+  });
+})();
+</script>
 
 </body>
 </html>

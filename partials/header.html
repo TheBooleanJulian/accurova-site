@@ -1,21 +1,45 @@
 <header>
   <nav>
     <a href="{{ROOT}}index.html" class="logo"><img src="{{ROOT}}assets/Logo/Accurova%20RTB%20Banner%20trans%20v1.png" alt="Accurova" class="logo-img"></a>
-    <div class="nav-links">
-      <a href="{{ROOT}}portfolio/index.html">Portfolio</a>
-      <a href="{{ROOT}}services/index.html">Services</a>
-      <a href="{{ROOT}}index.html#industries">Industries</a>
-      <a href="{{ROOT}}index.html#ai">AI Workflow</a>
+    <div class="nav-links" id="nav-links">
+      <div class="nav-group">
+        <a href="{{ROOT}}portfolio/index.html" class="nav-parent">Work</a>
+        <div class="nav-menu">
+          <a href="{{ROOT}}portfolio/index.html">Portfolio</a>
+          <a href="{{ROOT}}case-studies/index.html">Case Studies</a>
+          <a href="{{ROOT}}testimonials/index.html">Testimonials</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="{{ROOT}}services/index.html" class="nav-parent">Services</a>
+        <div class="nav-menu">
+          <a href="{{ROOT}}services/index.html">Services</a>
+          <a href="{{ROOT}}index.html#industries">Industries</a>
+          <a href="{{ROOT}}index.html#ai">AI Workflow</a>
+        </div>
+      </div>
       <a href="{{ROOT}}pricing/index.html">Pricing</a>
-      <a href="{{ROOT}}case-studies/index.html">Case Studies</a>
-      <a href="{{ROOT}}testimonials/index.html">Testimonials</a>
-      <a href="{{ROOT}}index.html#insights">Resources</a>
-      <a href="{{ROOT}}about/index.html">About</a>
+      <div class="nav-group">
+        <a href="{{ROOT}}about/index.html" class="nav-parent">About</a>
+        <div class="nav-menu">
+          <a href="{{ROOT}}about/index.html">About</a>
+          <a href="{{ROOT}}index.html#insights">Resources</a>
+          <a href="{{ROOT}}faq/index.html">FAQ</a>
+        </div>
+      </div>
     </div>
     <div class="nav-cta">
-      <a href="{{ROOT}}contact/index.html" class="btn btn-ghost">Request Quote</a>
       <a href="{{ROOT}}contact/index.html" class="btn btn-solid">Book Consult</a>
     </div>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
   </nav>
+  <script>
+    (function () {
+      var h = document.currentScript.parentNode;
+      var t = h.querySelector('.nav-toggle');
+      t.addEventListener('click', function () {
+        t.setAttribute('aria-expanded', h.classList.toggle('nav-open'));
+      });
+    })();
+  </script>
 </header>

@@ -129,9 +129,13 @@ Primary navigation:
 * Pricing / Packages
 * Contact
 
+> **Implemented 2026-09-28 (supersedes the list above):** Work (Portfolio, Case Studies, Testimonials) · Services (Services, Industries, AI Workflow) · Pricing · About (About, Resources, FAQ), with CSS-only dropdowns. Contact is reached via the CTA and footer, not a nav item.
+
 Primary CTA:
 
 **Get a Quote**
+
+> **Implemented as a single header button, "Book Consult"** — the separate Request Quote button was dropped so the header has one CTA. Quote requests go through the contact page.
 
 Mobile navigation should preserve the CTA prominently.
 

@@ -51,23 +51,47 @@
 <header>
   <nav>
     <a href="../index.html" class="logo"><img src="../assets/Logo/Accurova%20RTB%20Banner%20trans%20v1.png" alt="Accurova" class="logo-img"></a>
-    <div class="nav-links">
-      <a href="../portfolio/index.html">Portfolio</a>
-      <a href="../services/index.html">Services</a>
-      <a href="../index.html#industries">Industries</a>
-      <a href="../index.html#ai">AI Workflow</a>
+    <div class="nav-links" id="nav-links">
+      <div class="nav-group">
+        <a href="../portfolio/index.html" class="nav-parent">Work</a>
+        <div class="nav-menu">
+          <a href="../portfolio/index.html">Portfolio</a>
+          <a href="../case-studies/index.html">Case Studies</a>
+          <a href="../testimonials/index.html">Testimonials</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="../services/index.html" class="nav-parent">Services</a>
+        <div class="nav-menu">
+          <a href="../services/index.html">Services</a>
+          <a href="../index.html#industries">Industries</a>
+          <a href="../index.html#ai">AI Workflow</a>
+        </div>
+      </div>
       <a href="../pricing/index.html">Pricing</a>
-      <a href="../case-studies/index.html">Case Studies</a>
-      <a href="../testimonials/index.html">Testimonials</a>
-      <a href="../index.html#insights">Resources</a>
-      <a href="../about/index.html">About</a>
+      <div class="nav-group">
+        <a href="../about/index.html" class="nav-parent">About</a>
+        <div class="nav-menu">
+          <a href="../about/index.html">About</a>
+          <a href="../index.html#insights">Resources</a>
+          <a href="../faq/index.html">FAQ</a>
+        </div>
+      </div>
     </div>
     <div class="nav-cta">
-      <a href="../contact/index.html" class="btn btn-ghost">Request Quote</a>
       <a href="../contact/index.html" class="btn btn-solid">Book Consult</a>
     </div>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
   </nav>
+  <script>
+    (function () {
+      var h = document.currentScript.parentNode;
+      var t = h.querySelector('.nav-toggle');
+      t.addEventListener('click', function () {
+        t.setAttribute('aria-expanded', h.classList.toggle('nav-open'));
+      });
+    })();
+  </script>
 </header>
 <!--/INCLUDE:HEADER-->
 
@@ -143,7 +167,7 @@
     <div class="footer-grid">
       <div>
         <a href="../index.html" class="logo"><img src="../assets/Logo/Accurova%20RTB%20Banner%20trans%20v1.png" alt="Accurova" class="logo-img"></a>
-        <p class="muted" style="margin-top:16px; font-size:13.5px; max-width:260px;">Julian Cheung — freelance photographer, Singapore. Corporate, event, product, portrait and astrophotography.</p>
+        <p class="muted" style="margin-top:16px; font-size:13.5px; max-width:260px;">Julian Cheung — freelance photographer, Singapore. Photo and video — product, corporate, events, portraits, sports, drone and astrophotography.</p>
         <p style="margin-top:12px; font-size:12px; font-family:var(--mono);">
           <a href="https://www.instagram.com/accurova/" target="_blank" rel="noopener" style="color:var(--muted);">Instagram</a> ·
           <a href="https://t.me/accurova" target="_blank" rel="noopener" style="color:var(--muted);">Telegram</a>
@@ -154,6 +178,8 @@
         <ul>
           <li><a href="../portfolio/index.html">All Work</a></li>
           <li><a href="../portfolio/product.html">Product</a></li>
+          <li><a href="../portfolio/index.html#events">Events &amp; Celebrations</a></li>
+          <li><a href="../portfolio/index.html#video">Video</a></li>
         </ul>
       </div>
       <div>
