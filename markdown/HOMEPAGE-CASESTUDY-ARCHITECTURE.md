@@ -129,7 +129,7 @@ Primary navigation:
 * Pricing / Packages
 * Contact
 
-> **Implemented 2026-09-28 (supersedes the list above):** Work (Portfolio, Case Studies, Testimonials) · Services (Services, Industries, AI Workflow) · Pricing · About (About, Resources, FAQ), with CSS-only dropdowns. Contact is reached via the CTA and footer, not a nav item.
+> **Implemented 2026-09-28 (supersedes the list above):** Work (Case Studies, Testimonials — the separate Portfolio item was removed 2026-09-29 since case studies are the portfolio) · Services (Services, Industries, AI Workflow) · Pricing · About (About, Resources, FAQ), with CSS-only dropdowns. Contact is reached via the CTA and footer, not a nav item.
 
 Primary CTA:
 

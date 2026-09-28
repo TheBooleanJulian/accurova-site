@@ -1,6 +1,10 @@
 {
   "slug": "portrait-b",
   "category": "portrait",
+  "cat": "people",
+  "tags": [
+    "portraiture"
+  ],
   "title": "[PLACEHOLDER] Personal branding portraits \u2014 solo founder session",
   "client": "[Founder / individual name]",
   "location": "[Studio or on-location]",

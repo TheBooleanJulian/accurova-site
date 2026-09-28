@@ -27,6 +27,55 @@ INDEX_TEMPLATE = (OUT_DIR / "index-template.html").read_text(encoding="utf-8")
 
 CATEGORY_LABEL = {"event": "Event", "portrait": "Portrait", "product": "Product", "property": "Property"}
 
+# Fallback top-level filter category when a JSON file has no "cat" of its own.
+CAT_DEFAULT = {"event": "events", "portrait": "people", "product": "commercial", "property": "commercial"}
+
+# Two-level filter shown on /case-studies/. Sub-filters are (label, slug); a slug of
+# None marks one as "coming soon" (rendered disabled). An entry's "cat" and "tags"
+# (space-separated values in its JSON) must match these slugs.
+TAXONOMY = [
+    ("commercial", "Commercial", [("Product", "product"), ("F&B", "fb"), ("Fashion", "fashion"),
+        ("Property", "property"), ("Marketing Campaigns", "marketing-campaigns")]),
+    ("corporate", "Corporate", [("Corporate Headshots", "corporate-headshots"), ("Team Shoots", "team-shoots"),
+        ("Corporate Events", "corporate-events"), ("MICE", "mice"), ("Galas", "galas")]),
+    ("events", "Events & Celebrations", [("Weddings", "weddings"), ("Proposals", "proposals"),
+        ("Birthdays", "birthdays"), ("Anniversaries", "anniversaries"), ("Graduation", "graduation"),
+        ("Community Events", "community-events"), ("BTS", "bts")]),
+    ("people", "Portraits & People", [("Portraiture", "portraiture"), ("Lifestyle", "lifestyle"),
+        ("Cosplay", "cosplay"), ("Babies", "babies"), ("Furkids", "furkids")]),
+    ("sports", "Sports & Action", [("Sports", "sports"), ("Motorsports", "motorsports"),
+        ("Underwater", "underwater")]),
+    ("aerial", "Aerial & Immersive", [("Drone (with ua.xhackx)", "drone"), ("Virtual Tours", "virtual-tours"),
+        ("360", "360"), ("Holograms", "holograms")]),
+    ("creative", "Creative & Science", [("Astrophotos", "astrophotos"), ("Macro", "macro")]),
+    ("video", "Video", [("Event Videography", "event-videography"), ("Product Videography", "product-videography"),
+        ("Comedy Channel (ChuckleClips)", "comedy-channel"),
+        ("Micro-influencer Marketing (GraceYuki)", "influencer-marketing"),
+        ("Property Videography", "property-videography"),
+        ("Business Marketing (DoctorClean)", None)]),
+]
+
+
+def entry_cat(entry):
+    return " ".join(entry["cat"].split()) if entry.get("cat") else CAT_DEFAULT.get(entry["category"], "")
+
+
+def filter_html():
+    rows = ['  <div class="filter-row" id="cs-cats">',
+            '    <button type="button" class="filter-chip active" data-cat="all">All</button>']
+    rows += [f'    <button type="button" class="filter-chip" data-cat="{c}">{escape(label)}</button>'
+             for c, label, _ in TAXONOMY]
+    rows.append('  </div>')
+    for c, _, subs in TAXONOMY:
+        rows.append(f'  <div class="filter-sub" data-for="{c}" hidden>')
+        for label, slug in subs:
+            if slug is None:
+                rows.append(f'    <button type="button" class="filter-chip" disabled>{escape(label)}<small>Coming soon</small></button>')
+            else:
+                rows.append(f'    <button type="button" class="filter-chip" data-tag="{slug}">{escape(label)}</button>')
+        rows.append('  </div>')
+    return "\n".join(rows)
+
 
 def load_entries():
     entries = []
@@ -67,7 +116,7 @@ def related_html(entry, all_entries):
 def card_html(entry, depth):
     prefix = "../" * (depth - 1) if depth > 1 else ""
     href = f"{prefix}{entry['slug']}/" if depth > 1 else f"{entry['slug']}/"
-    return f"""<a class="cs-card" href="{href}" data-category="{escape(entry['category'])}">
+    return f"""<a class="cs-card" href="{href}" data-cat="{escape(entry_cat(entry))}" data-tag="{escape(' '.join(entry.get('tags', [])))}">
       <div class="thumb"><img src="{escape(entry['cover_image'])}" alt="{escape(entry['title'])}" loading="lazy"></div>
       <div class="cs-card-body">
         <div class="cs-card-cat">{escape(CATEGORY_LABEL.get(entry['category'], entry['category']))}</div>
@@ -110,6 +159,7 @@ def render_page(entry, all_entries):
 
 def render_index(entries):
     html = INDEX_TEMPLATE
+    html = html.replace("{{FILTER_BLOCK}}", filter_html())
     html = html.replace("{{COUNT}}", str(len(entries)))
     html = html.replace("{{CARDS_BLOCK}}", "\n    ".join(card_html(e, depth=1) for e in entries))
     return html

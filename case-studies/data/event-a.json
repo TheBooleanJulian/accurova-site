@@ -1,6 +1,11 @@
 {
   "slug": "event-a",
   "category": "event",
+  "cat": "corporate",
+  "tags": [
+    "galas",
+    "corporate-events"
+  ],
   "title": "[PLACEHOLDER] BNI Crescendo Annual Gala \u2014 300-guest corporate event coverage",
   "client": "[Client / chapter name]",
   "location": "[Venue, Singapore]",

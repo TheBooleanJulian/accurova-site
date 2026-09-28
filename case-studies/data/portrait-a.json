@@ -1,6 +1,11 @@
 {
   "slug": "portrait-a",
   "category": "portrait",
+  "cat": "corporate",
+  "tags": [
+    "corporate-headshots",
+    "team-shoots"
+  ],
   "title": "[PLACEHOLDER] Executive headshots \u2014 25-person leadership team",
   "client": "[Company name]",
   "location": "[Office, Singapore]",

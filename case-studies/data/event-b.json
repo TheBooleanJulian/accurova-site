@@ -1,6 +1,10 @@
 {
   "slug": "event-b",
   "category": "event",
+  "cat": "corporate",
+  "tags": [
+    "corporate-events"
+  ],
   "title": "[PLACEHOLDER] Product launch party \u2014 120-guest brand activation",
   "client": "[Brand name]",
   "location": "[Venue, Singapore]",

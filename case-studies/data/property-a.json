@@ -1,18 +1,24 @@
 {
   "slug": "property-a",
   "category": "property",
-  "title": "[PLACEHOLDER] Residential property shoot — wide-angle stills, 360s &amp; virtual tour",
+  "cat": "commercial aerial",
+  "tags": [
+    "property",
+    "virtual-tours",
+    "360"
+  ],
+  "title": "[PLACEHOLDER] Residential property shoot \u2014 wide-angle stills, 360s &amp; virtual tour",
   "title_short": "Residential Property Shoot",
   "client": "[Client / agency name]",
   "location": "[Property address / district, Singapore]",
   "date": "2026-01-01",
   "date_display": "[Month Year]",
-  "services": "Property Photography, 360° Virtual Tour, Walkthrough Video",
-  "summary": "[PLACEHOLDER] Full property coverage — wide-angle DSLR stills, rectilinear 360° photos, a room-by-room virtual tour (4D Kankan) and a walkthrough video, delivered for listing use.",
+  "services": "Property Photography, 360\u00b0 Virtual Tour, Walkthrough Video",
+  "summary": "[PLACEHOLDER] Full property coverage \u2014 wide-angle DSLR stills, rectilinear 360\u00b0 photos, a room-by-room virtual tour (4D Kankan) and a walkthrough video, delivered for listing use.",
   "cover_image": "/assets/case-studies/property-a/cover.jpg",
-  "challenge": "[PLACEHOLDER] What the client needed — e.g. a fast listing turnaround, tight rooms needing wide-angle correction, or a virtual tour to support remote/overseas buyers.",
-  "approach": "[PLACEHOLDER] Wide-angle DSLR coverage of every room, rectilinear-corrected 360° captures per room, stitched into a 4D Kankan virtual tour, plus a walkthrough video for listing platforms and social.",
-  "behind_the_scenes": "[PLACEHOLDER] A specific anecdote from the shoot — lighting/weather conditions, staging, or a tricky room.",
+  "challenge": "[PLACEHOLDER] What the client needed \u2014 e.g. a fast listing turnaround, tight rooms needing wide-angle correction, or a virtual tour to support remote/overseas buyers.",
+  "approach": "[PLACEHOLDER] Wide-angle DSLR coverage of every room, rectilinear-corrected 360\u00b0 captures per room, stitched into a 4D Kankan virtual tour, plus a walkthrough video for listing platforms and social.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific anecdote from the shoot \u2014 lighting/weather conditions, staging, or a tricky room.",
   "ai_workflow": "[PLACEHOLDER] AI-assisted perspective correction and HDR blending across the wide-angle set, cutting post time versus manual bracket blending.",
   "results": [
     {
@@ -25,7 +31,7 @@
     },
     {
       "num": "[X]",
-      "label": "360° tour stops"
+      "label": "360\u00b0 tour stops"
     }
   ],
   "gallery": [

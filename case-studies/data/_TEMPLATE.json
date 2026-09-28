@@ -1,6 +1,10 @@
 {
   "slug": "your-slug-here",
   "category": "event",
+  "cat": "events",
+  "tags": [
+    "weddings"
+  ],
   "title": "Real title of the shoot",
   "title_short": "Short version for breadcrumb",
   "client": "Client name",

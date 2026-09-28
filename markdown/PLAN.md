@@ -53,7 +53,7 @@ Clean directory-based URLs with trailing slashes. Current + planned:
 /pricing/                      ✅ built
 /contact/                      ✅ built
 /testimonials/                 ✅ built (was "reviews" in the original plan)
-/portfolio/                    ✅ built (index + product category)
+/portfolio/                    ➡️ redirect stubs to /case-studies/ (case studies supersede the portfolio, 2026-09-29)
 /services/                     ✅ built (index + product-photography example)
 /services/[slug]/              planned: corporate-photography, event-photography,
                                 portrait-photography, cosplay-photography (+ product-photography exists)
@@ -99,11 +99,14 @@ Planned slugs and target intent (per the 2026-09-28 positioning decision — cor
 
 Template sections (from the extended site-architecture spec): Hero (service name + image) → What's included (icon list) → Process (3-5 steps) → Sample gallery pulled from matching portfolio category → Pricing band ("from $X") → FAQ (3-4 Qs specific to that service) → CTA.
 
-### Portfolio — `/portfolio/`
+### Portfolio — superseded by `/case-studies/` (2026-09-29)
+
+> `/portfolio/` and `/portfolio/product.html` are now redirect stubs. The category filter below lives on `/case-studies/`; its taxonomy is the `TAXONOMY` list in `scripts/generate_case_studies.py` and each story tags itself with `cat` / `tags` in its JSON.
+
 
 Visual evidence, not the main SEO text dump. Per the confirmed case-studies-as-portfolio model above, this becomes an index into the case studies rather than a separate gallery system:
 
-- **Index filter taxonomy (implemented 2026-09-28):** two-level chips — Commercial (Product, F&B, Fashion, Property, Marketing Campaigns), Corporate (Headshots, Team Shoots, Corporate Events, MICE, Galas), Events & Celebrations (Weddings, Proposals, Birthdays, Anniversaries, Graduation, Community Events, BTS), Portraits & People (Portraiture, Lifestyle, Cosplay, Babies, Furkids), Sports & Action (Sports, Motorsports, Underwater), Aerial & Immersive (Drone with ua.xhackx, Virtual Tours, 360, Holograms), Creative & Science (Astrophotos, Macro), Video (Event, Product, Comedy Channel/ChuckleClips, Micro-influencer/GraceYuki, Property, Business Marketing/DoctorClean — coming soon). Categories without real work yet show an empty-state, not placeholder tiles; do not add tiles for work that has not been shot. See README "Adding a portfolio tile".
+- **Index filter taxonomy (implemented 2026-09-28, moved to `/case-studies/` 2026-09-29):** two-level chips — Commercial (Product, F&B, Fashion, Property, Marketing Campaigns), Corporate (Headshots, Team Shoots, Corporate Events, MICE, Galas), Events & Celebrations (Weddings, Proposals, Birthdays, Anniversaries, Graduation, Community Events, BTS), Portraits & People (Portraiture, Lifestyle, Cosplay, Babies, Furkids), Sports & Action (Sports, Motorsports, Underwater), Aerial & Immersive (Drone with ua.xhackx, Virtual Tours, 360, Holograms), Creative & Science (Astrophotos, Macro), Video (Event, Product, Comedy Channel/ChuckleClips, Micro-influencer/GraceYuki, Property, Business Marketing/DoctorClean — coming soon). Categories without a real case study yet show an empty-state, not placeholder cards; do not add stories for work that has not been shot. See README "Tagging a case study".
 - **Index:** filter/category links — Corporate, Events, Products, Portraits, Property, Cosplay, Astro, and other categories actually supported by real work — each linking to its one flagship case study rather than a generic gallery page. Same `.work-grid` masonry component for any supplementary imagery.
 - **Individual project pages = the case studies themselves** (see below), not a separate "project page" template. Title, client (only where permitted), industry/type where known, location where appropriate, deliverables, gallery, concise description, related service, related case study, enquiry CTA — all covered by the case-study structure.
 

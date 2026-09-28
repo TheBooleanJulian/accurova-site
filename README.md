@@ -24,14 +24,14 @@ Pure HTML/CSS site for Accurova, a Singapore photography practice, with no build
 - `data/business.json` as the canonical source for business info, with unverified fields explicitly marked so nothing gets published as fact prematurely
 - Design system (`assets/style.css`) built on a void/teal/gold palette with Space Grotesk for display type and JetBrains Mono for labels/data
 - Header is 4 grouped items (Work / Services / Pricing / About, CSS-only dropdowns) plus a single Book Consult CTA; the hamburger menu is a few lines of inline JS in the partial
-- Portfolio filter is two-level (top-level category chips → sub-chips), tagged per tile with `data-cat` / `data-tag`; see [portfolio/index.html](portfolio/index.html). Deep-link a category with `portfolio/index.html#video`
+- Case studies are the portfolio: `/case-studies/` has a two-level filter (top-level category chips → sub-chips) driven by each story's `cat` / `tags` fields and the `TAXONOMY` list in `scripts/generate_case_studies.py`. Deep-link a category with `case-studies/index.html#video`. `/portfolio/` and `/portfolio/product.html` are redirect stubs kept only so old links keep working
 - Dedicated service, portfolio, and case-study sections, each following a consistent template/component pattern (`.work-grid`, `.meta-row`, `.filter-chip`, `.cta-band`, etc.)
 - `robots.txt` blocking crawling on the staging domain until the real cutover
 - Custom `Caddyfile` at the repo root, overriding Zeabur's auto-generated one so `errors/not-found.html` is wired up correctly as the 404 handler (see Deploy below)
 
-### Adding a portfolio tile
+### Tagging a case study
 
-Copy an existing `.work-item` in `portfolio/index.html` and set `data-cat` (top-level category: `commercial`, `corporate`, `events`, `people`, `sports`, `aerial`, `creative`, `video`) and `data-tag` (sub-filter slug matching a sub-chip's `data-tag`). Both accept several space-separated values, so a wedding video can be `data-cat="events video" data-tag="weddings event-videography"`. Categories with no tiles show an "being added" message rather than an empty grid. To add or rename a category or sub-filter, edit the chip rows above the grid — the filter script needs no changes.
+Each `case-studies/data/*.json` has `cat` (top-level category) and `tags` (sub-filters). `cat` is one or more of `commercial`, `corporate`, `events`, `people`, `sports`, `aerial`, `creative`, `video` (space-separated); `tags` is a list of sub-filter slugs. A wedding video would be `"cat": "events video", "tags": ["weddings", "event-videography"]`. If `cat` is omitted it falls back from `category` (see `CAT_DEFAULT` in the generator). Categories with no story yet show a "being added" message instead of an empty grid. To add or rename a category or sub-filter, edit `TAXONOMY` in `scripts/generate_case_studies.py` and re-run it.
 
 ## Tech Stack
 
@@ -71,7 +71,7 @@ Caddyfile                   custom Zeabur/Caddy config — see Deploy below
 errors/not-found.html       404 page, served via Caddyfile's handle_errors (root-absolute links —
                              it must render correctly no matter what missing URL triggered it)
 services/                   service pages (template: services/product-photography.html)
-portfolio/                  portfolio index + project pages
+portfolio/                  redirect stubs to case-studies/ (old URLs only)
 case-studies/
   template.html             page shell used to generate each story
   index-template.html       landing page shell (filter chips)
@@ -113,6 +113,7 @@ See [markdown/STATUS.md](markdown/STATUS.md) — kept current there rather than 
 
 ## Changelog
 
+- **2026-09-29** — Case studies now supersede the portfolio: the two-level category filter moved to `/case-studies/`, `/portfolio/*` became redirect stubs, and the nav, footer, homepage, 404, sitemap and case-study templates point at Case Studies
 - **2026-09-28** — Simplified the header (9 links + 2 CTAs → 4 grouped items + 1 CTA, working mobile menu); portfolio filter reorganised into 9 top-level categories with sub-filters incl. Video; portfolio meta/title and footer updated to match
 - **2026-09-28** — Consolidated planning docs into `markdown/PLAN.md` + `markdown/STATUS.md`; promoted About/Pricing/Contact/Testimonials to dedicated pages; fixed the Zeabur/Caddy 404 routing bug; corrected the SME500 Award 2026 accreditation (real, verified) and added the real UEN
 - **2026-08-25** — Replaced fabricated placeholder content with real content pulled from the live accurova.com site

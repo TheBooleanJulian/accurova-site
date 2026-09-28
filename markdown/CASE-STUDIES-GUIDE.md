@@ -12,7 +12,7 @@ accurova-site/
 │   └── style.css                case-study CSS lives alongside the rest, same tokens
 ├── case-studies/
 │   ├── template.html             the page shell — one template, many stories
-│   ├── index-template.html       the portfolio-dump landing page w/ filter chips
+│   ├── index-template.html       landing page; two-level filter chips are generated from TAXONOMY in the generator
 │   ├── data/
 │   │   ├── _TEMPLATE.json        copy this to start a new case study
 │   │   ├── event-a.json          placeholder — 6 sample entries pre-loaded
@@ -24,7 +24,7 @@ accurova-site/
 │   ├── event-a/index.html        ← generated, don't hand-edit
 │   ├── ...                       ← generated, don't hand-edit
 │   └── index.html                ← generated, don't hand-edit
-├── index.html, portfolio/, services/, about/, pricing/, contact/, testimonials/   unrelated to this generator
+├── index.html, portfolio/ (redirect stubs), services/, about/, pricing/, contact/, testimonials/   unrelated to this generator
 └── scripts/generate_case_studies.py   run from the repo root
 ```
 
@@ -70,3 +70,7 @@ See [STATUS.md](STATUS.md) for the current up-to-date checklist. As of the last 
 - Nav/footer across the whole site (including case-studies) are in sync — done.
 - All 6 case studies are still the original placeholder stories (`event-a/b`, `portrait-a/b`, `product-a/b`) with `picsum.photos` images. These must not go live as real case studies — either mark them clearly as demo content or replace with genuine projects before the `accurova.com` cutover.
 - Once ~10+ real stories exist, consider an "Industries" filter alongside category (the JSON schema has room — add `"tags": [...]`, extend `index-template.html`'s filter bar to match).
+
+## Categories & filters
+
+The landing page filter is two-level (category chips, then sub-chips), defined once in `TAXONOMY` in `scripts/generate_case_studies.py`. Each story JSON carries `cat` (one or more top-level slugs, space-separated) and `tags` (sub-filter slugs); `category` (event/portrait/product/property) is still used for the card label and "related" matching. Deep links: `case-studies/index.html#video`, `#events`, etc. This supersedes the old single-level "Industries" filter idea above.

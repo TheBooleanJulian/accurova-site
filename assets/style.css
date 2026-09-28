@@ -327,6 +327,7 @@ button.filter-chip{background:none; font-family:var(--mono);}
 
 .cs-card{display:block; border:1px solid var(--line); background:var(--void); transition:border-color .2s;}
 .cs-card:hover{border-color:var(--teal);}
+.cs-card[hidden]{display:none;}
 .cs-card .thumb{aspect-ratio:4/3; overflow:hidden;}
 .cs-card .thumb img{width:100%; height:100%; object-fit:cover; transition:transform .4s;}
 .cs-card:hover .thumb img{transform:scale(1.05);}

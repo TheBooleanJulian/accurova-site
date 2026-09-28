@@ -1,6 +1,10 @@
 {
   "slug": "product-a",
   "category": "product",
+  "cat": "commercial",
+  "tags": [
+    "product"
+  ],
   "title": "[PLACEHOLDER] E-commerce catalogue shoot \u2014 60-SKU product line",
   "client": "[Brand name]",
   "location": "[Studio, Singapore]",

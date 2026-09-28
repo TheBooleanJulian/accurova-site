@@ -21,9 +21,8 @@
     <a href="../index.html" class="logo"><img src="../assets/Logo/Accurova%20RTB%20Banner%20trans%20v1.png" alt="Accurova" class="logo-img"></a>
     <div class="nav-links" id="nav-links">
       <div class="nav-group">
-        <a href="../portfolio/index.html" class="nav-parent">Work</a>
+        <a href="../case-studies/index.html" class="nav-parent">Work</a>
         <div class="nav-menu">
-          <a href="../portfolio/index.html">Portfolio</a>
           <a href="../case-studies/index.html">Case Studies</a>
           <a href="../testimonials/index.html">Testimonials</a>
         </div>
@@ -67,64 +66,121 @@
 </div>
 
 <section class="page-hero wrap">
-  <p class="eyebrow">Portfolio · 7 stories and counting</p>
+  <p class="eyebrow">Case Studies · 7 stories and counting</p>
   <h1>Real shoots. Real clients. Real results.</h1>
-  <p class="lede">Every case study here is a real Accurova job — the brief, the day, the AI-assisted edit, and the frames we handed back. Filter by category or scroll the full dump.</p>
+  <p class="lede">Every case study here is a real Accurova job — the brief, the day, the AI-assisted edit, and the frames we handed back. Pick a category, then narrow it down.</p>
 </section>
 
 <div class="wrap">
-  <div class="filter-row" id="cs-filters">
-    <button class="filter-chip active" data-filter="all">All</button>
-    <button class="filter-chip" data-filter="event">Events</button>
-    <button class="filter-chip" data-filter="portrait">Portraits</button>
-    <button class="filter-chip" data-filter="product">Product</button>
-    <button class="filter-chip" data-filter="property">Property</button>
+  <div class="filter-row" id="cs-cats">
+    <button type="button" class="filter-chip active" data-cat="all">All</button>
+    <button type="button" class="filter-chip" data-cat="commercial">Commercial</button>
+    <button type="button" class="filter-chip" data-cat="corporate">Corporate</button>
+    <button type="button" class="filter-chip" data-cat="events">Events &amp; Celebrations</button>
+    <button type="button" class="filter-chip" data-cat="people">Portraits &amp; People</button>
+    <button type="button" class="filter-chip" data-cat="sports">Sports &amp; Action</button>
+    <button type="button" class="filter-chip" data-cat="aerial">Aerial &amp; Immersive</button>
+    <button type="button" class="filter-chip" data-cat="creative">Creative &amp; Science</button>
+    <button type="button" class="filter-chip" data-cat="video">Video</button>
+  </div>
+  <div class="filter-sub" data-for="commercial" hidden>
+    <button type="button" class="filter-chip" data-tag="product">Product</button>
+    <button type="button" class="filter-chip" data-tag="fb">F&amp;B</button>
+    <button type="button" class="filter-chip" data-tag="fashion">Fashion</button>
+    <button type="button" class="filter-chip" data-tag="property">Property</button>
+    <button type="button" class="filter-chip" data-tag="marketing-campaigns">Marketing Campaigns</button>
+  </div>
+  <div class="filter-sub" data-for="corporate" hidden>
+    <button type="button" class="filter-chip" data-tag="corporate-headshots">Corporate Headshots</button>
+    <button type="button" class="filter-chip" data-tag="team-shoots">Team Shoots</button>
+    <button type="button" class="filter-chip" data-tag="corporate-events">Corporate Events</button>
+    <button type="button" class="filter-chip" data-tag="mice">MICE</button>
+    <button type="button" class="filter-chip" data-tag="galas">Galas</button>
+  </div>
+  <div class="filter-sub" data-for="events" hidden>
+    <button type="button" class="filter-chip" data-tag="weddings">Weddings</button>
+    <button type="button" class="filter-chip" data-tag="proposals">Proposals</button>
+    <button type="button" class="filter-chip" data-tag="birthdays">Birthdays</button>
+    <button type="button" class="filter-chip" data-tag="anniversaries">Anniversaries</button>
+    <button type="button" class="filter-chip" data-tag="graduation">Graduation</button>
+    <button type="button" class="filter-chip" data-tag="community-events">Community Events</button>
+    <button type="button" class="filter-chip" data-tag="bts">BTS</button>
+  </div>
+  <div class="filter-sub" data-for="people" hidden>
+    <button type="button" class="filter-chip" data-tag="portraiture">Portraiture</button>
+    <button type="button" class="filter-chip" data-tag="lifestyle">Lifestyle</button>
+    <button type="button" class="filter-chip" data-tag="cosplay">Cosplay</button>
+    <button type="button" class="filter-chip" data-tag="babies">Babies</button>
+    <button type="button" class="filter-chip" data-tag="furkids">Furkids</button>
+  </div>
+  <div class="filter-sub" data-for="sports" hidden>
+    <button type="button" class="filter-chip" data-tag="sports">Sports</button>
+    <button type="button" class="filter-chip" data-tag="motorsports">Motorsports</button>
+    <button type="button" class="filter-chip" data-tag="underwater">Underwater</button>
+  </div>
+  <div class="filter-sub" data-for="aerial" hidden>
+    <button type="button" class="filter-chip" data-tag="drone">Drone (with ua.xhackx)</button>
+    <button type="button" class="filter-chip" data-tag="virtual-tours">Virtual Tours</button>
+    <button type="button" class="filter-chip" data-tag="360">360</button>
+    <button type="button" class="filter-chip" data-tag="holograms">Holograms</button>
+  </div>
+  <div class="filter-sub" data-for="creative" hidden>
+    <button type="button" class="filter-chip" data-tag="astrophotos">Astrophotos</button>
+    <button type="button" class="filter-chip" data-tag="macro">Macro</button>
+  </div>
+  <div class="filter-sub" data-for="video" hidden>
+    <button type="button" class="filter-chip" data-tag="event-videography">Event Videography</button>
+    <button type="button" class="filter-chip" data-tag="product-videography">Product Videography</button>
+    <button type="button" class="filter-chip" data-tag="comedy-channel">Comedy Channel (ChuckleClips)</button>
+    <button type="button" class="filter-chip" data-tag="influencer-marketing">Micro-influencer Marketing (GraceYuki)</button>
+    <button type="button" class="filter-chip" data-tag="property-videography">Property Videography</button>
+    <button type="button" class="filter-chip" disabled>Business Marketing (DoctorClean)<small>Coming soon</small></button>
   </div>
 
   <div class="cs-index-grid" id="cs-grid" style="margin-bottom:110px;">
-    <a class="cs-card" href="event-a/" data-category="event">
+    <a class="cs-card" href="event-a/" data-cat="corporate" data-tag="galas corporate-events">
       <div class="thumb"><img src="https://picsum.photos/seed/event-a-cover/1600/900" alt="[PLACEHOLDER] BNI Crescendo Annual Gala — 300-guest corporate event coverage" loading="lazy"></div>
       <div class="cs-card-body">
         <div class="cs-card-cat">Event</div>
         <div class="cs-card-title">BNI Crescendo Gala</div>
       </div>
     </a>
-    <a class="cs-card" href="event-b/" data-category="event">
+    <a class="cs-card" href="event-b/" data-cat="corporate" data-tag="corporate-events">
       <div class="thumb"><img src="https://picsum.photos/seed/event-b-cover/1600/900" alt="[PLACEHOLDER] Product launch party — 120-guest brand activation" loading="lazy"></div>
       <div class="cs-card-body">
         <div class="cs-card-cat">Event</div>
         <div class="cs-card-title">Product Launch Party</div>
       </div>
     </a>
-    <a class="cs-card" href="portrait-a/" data-category="portrait">
+    <a class="cs-card" href="portrait-a/" data-cat="corporate" data-tag="corporate-headshots team-shoots">
       <div class="thumb"><img src="https://picsum.photos/seed/portrait-a-cover/1600/900" alt="[PLACEHOLDER] Executive headshots — 25-person leadership team" loading="lazy"></div>
       <div class="cs-card-body">
         <div class="cs-card-cat">Portrait</div>
         <div class="cs-card-title">Executive Headshots</div>
       </div>
     </a>
-    <a class="cs-card" href="portrait-b/" data-category="portrait">
+    <a class="cs-card" href="portrait-b/" data-cat="people" data-tag="portraiture">
       <div class="thumb"><img src="https://picsum.photos/seed/portrait-b-cover/1600/900" alt="[PLACEHOLDER] Personal branding portraits — solo founder session" loading="lazy"></div>
       <div class="cs-card-body">
         <div class="cs-card-cat">Portrait</div>
         <div class="cs-card-title">Founder Branding Session</div>
       </div>
     </a>
-    <a class="cs-card" href="product-a/" data-category="product">
+    <a class="cs-card" href="product-a/" data-cat="commercial" data-tag="product">
       <div class="thumb"><img src="https://picsum.photos/seed/product-a-cover/1600/900" alt="[PLACEHOLDER] E-commerce catalogue shoot — 60-SKU product line" loading="lazy"></div>
       <div class="cs-card-body">
         <div class="cs-card-cat">Product</div>
         <div class="cs-card-title">E-commerce Catalogue</div>
       </div>
     </a>
-    <a class="cs-card" href="product-b/" data-category="product">
+    <a class="cs-card" href="product-b/" data-cat="commercial" data-tag="product fb marketing-campaigns">
       <div class="thumb"><img src="https://picsum.photos/seed/product-b-cover/1600/900" alt="[PLACEHOLDER] Lifestyle product shoot — F&amp;B brand campaign set" loading="lazy"></div>
       <div class="cs-card-body">
         <div class="cs-card-cat">Product</div>
         <div class="cs-card-title">F&amp;B Lifestyle Shoot</div>
       </div>
     </a>
-    <a class="cs-card" href="property-a/" data-category="property">
+    <a class="cs-card" href="property-a/" data-cat="commercial aerial" data-tag="property virtual-tours 360">
       <div class="thumb"><img src="/assets/case-studies/property-a/cover.jpg" alt="[PLACEHOLDER] Residential property shoot — wide-angle stills, 360s &amp;amp; virtual tour" loading="lazy"></div>
       <div class="cs-card-body">
         <div class="cs-card-cat">Property</div>
@@ -132,6 +188,7 @@
       </div>
     </a>
   </div>
+  <p class="filter-empty" id="cs-empty" hidden style="margin-bottom:110px;">Stories for this category are being added — <a href="../contact/index.html" style="color:var(--teal);">ask for a private reel</a>.</p>
 </div>
 
 <section class="cta-band">
@@ -156,12 +213,12 @@
         </p>
       </div>
       <div>
-        <h4>Portfolio</h4>
+        <h4>Case Studies</h4>
         <ul>
-          <li><a href="../portfolio/index.html">All Work</a></li>
-          <li><a href="../portfolio/product.html">Product</a></li>
-          <li><a href="../portfolio/index.html#events">Events &amp; Celebrations</a></li>
-          <li><a href="../portfolio/index.html#video">Video</a></li>
+          <li><a href="../case-studies/index.html">All Case Studies</a></li>
+          <li><a href="../case-studies/index.html#commercial">Commercial</a></li>
+          <li><a href="../case-studies/index.html#events">Events &amp; Celebrations</a></li>
+          <li><a href="../case-studies/index.html#video">Video</a></li>
         </ul>
       </div>
       <div>
@@ -177,7 +234,6 @@
         <h4>Resources</h4>
         <ul>
           <li><a href="../index.html#insights">Guides</a></li>
-          <li><a href="../case-studies/index.html">Case Studies</a></li>
           <li><a href="../testimonials/index.html">Testimonials</a></li>
           <li><a href="../faq/index.html">FAQ</a></li>
           <li><a href="../about/index.html">About</a></li>
@@ -199,19 +255,52 @@
 </a>
 
 
+
 <script>
-  const filters = document.querySelectorAll('#cs-filters .filter-chip');
-  const cards = document.querySelectorAll('#cs-grid .cs-card');
-  filters.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filters.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const f = btn.dataset.filter;
-      cards.forEach(card => {
-        card.style.display = (f === 'all' || card.dataset.category === f) ? '' : 'none';
+(function () {
+  var cats = document.getElementById('cs-cats');
+  var subs = document.querySelectorAll('.filter-sub');
+  var items = document.querySelectorAll('#cs-grid .cs-card');
+  var empty = document.getElementById('cs-empty');
+  var cat = 'all', tag = null;
+
+  function has(el, key, val) { return (el.getAttribute(key) || '').split(' ').indexOf(val) > -1; }
+
+  function apply() {
+    var shown = 0;
+    items.forEach(function (it) {
+      var ok = cat === 'all' || (has(it, 'data-cat', cat) && (!tag || has(it, 'data-tag', tag)));
+      it.hidden = !ok;
+      if (ok) shown++;
+    });
+    empty.hidden = shown > 0;
+    cats.querySelectorAll('.filter-chip').forEach(function (b) {
+      b.classList.toggle('active', b.dataset.cat === cat);
+    });
+    subs.forEach(function (row) {
+      row.hidden = row.dataset['for'] !== cat;
+      row.querySelectorAll('.filter-chip').forEach(function (b) {
+        b.classList.toggle('active', !!tag && b.dataset.tag === tag);
       });
     });
+  }
+
+  var start = cats.querySelector('[data-cat="' + location.hash.slice(1) + '"]');
+  if (start) { cat = start.dataset.cat; apply(); }
+
+  cats.addEventListener('click', function (e) {
+    var b = e.target.closest('.filter-chip');
+    if (!b) return;
+    cat = b.dataset.cat; tag = null; apply();
   });
+  subs.forEach(function (row) {
+    row.addEventListener('click', function (e) {
+      var b = e.target.closest('.filter-chip');
+      if (!b || b.disabled) return;
+      tag = tag === b.dataset.tag ? null : b.dataset.tag; apply();
+    });
+  });
+})();
 </script>
 
 </body>

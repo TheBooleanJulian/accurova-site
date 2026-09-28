@@ -1,6 +1,12 @@
 {
   "slug": "product-b",
   "category": "product",
+  "cat": "commercial",
+  "tags": [
+    "product",
+    "fb",
+    "marketing-campaigns"
+  ],
   "title": "[PLACEHOLDER] Lifestyle product shoot \u2014 F&B brand campaign set",
   "client": "[Brand name]",
   "location": "[On-location, Singapore]",
