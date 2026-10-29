@@ -1,0 +1,18 @@
+# What Cloudflare must NOT serve (mirrors the vetted static staging filter)
+wrangler.jsonc
+.*
+node_modules
+admin-api
+markdown
+*.md
+*.php
+*.py
+*.ps1
+*.sh
+*.gs
+/LICENSE
+/Caddyfile
+/Dockerfile
+/Procfile
+/zeabur.json
+/zbpack.json
