@@ -1,0 +1,17 @@
+// Cloudflare Workers Builds: no build command, deploy command `npx wrangler deploy`. Served files: see .assetsignore.
+{
+  "name": "accurova-site",
+  "account_id": "c580c4403524273d1bece674117472dd",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    {
+      "pattern": "home.accurova.com",
+      "custom_domain": true
+    }
+  ]
+}
