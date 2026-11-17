@@ -1,0 +1,45 @@
+{
+  "slug": "anniversary-a",
+  "category": "event",
+  "cat": "events",
+  "tags": [
+    "anniversaries"
+  ],
+  "title": "[PLACEHOLDER] Anniversary shoot — couple session to mark a milestone",
+  "title_short": "Anniversary Shoot",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Couple Photography",
+  "summary": "[PLACEHOLDER] One or two sentences on a couple's anniversary session marking a milestone year. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/anniversary-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: the couple, the milestone, why they wanted it photographed and the look they were after.",
+  "approach": "[PLACEHOLDER] How you planned and shot it: location choice, time of day, posing vs candid direction, wardrobe advice.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Locations"
+    },
+    {
+      "num": "[X]",
+      "label": "Delivered frames"
+    },
+    {
+      "num": "[X]",
+      "label": "Turnaround (days)"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/anniversary-a/1.jpg",
+    "/assets/case-studies/anniversary-a/2.jpg",
+    "/assets/case-studies/anniversary-a/3.jpg",
+    "/assets/case-studies/anniversary-a/4.jpg",
+    "/assets/case-studies/anniversary-a/5.jpg",
+    "/assets/case-studies/anniversary-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}

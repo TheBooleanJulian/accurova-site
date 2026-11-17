@@ -1,0 +1,46 @@
+{
+  "slug": "mice-a",
+  "category": "event",
+  "cat": "corporate",
+  "tags": [
+    "mice",
+    "corporate-events"
+  ],
+  "title": "[PLACEHOLDER] MICE conference coverage — multi-day keynotes, breakouts & networking",
+  "title_short": "MICE Conference",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Event Photography, Conference Coverage",
+  "summary": "[PLACEHOLDER] One or two sentences on multi-day conference / MICE coverage across keynotes, breakout rooms and networking. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/mice-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: the organiser, number of days and rooms, VIPs and sponsors who must be covered, same-day image needs for PR/social.",
+  "approach": "[PLACEHOLDER] How you planned and shot it: shooter allocation per room, run-sheet priorities, sponsor-booth coverage, how same-day selects were sent.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Days covered"
+    },
+    {
+      "num": "[X]",
+      "label": "Sessions covered"
+    },
+    {
+      "num": "[X]",
+      "label": "Delivered frames"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/mice-a/1.jpg",
+    "/assets/case-studies/mice-a/2.jpg",
+    "/assets/case-studies/mice-a/3.jpg",
+    "/assets/case-studies/mice-a/4.jpg",
+    "/assets/case-studies/mice-a/5.jpg",
+    "/assets/case-studies/mice-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}

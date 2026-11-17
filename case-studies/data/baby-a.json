@@ -1,0 +1,45 @@
+{
+  "slug": "baby-a",
+  "category": "portrait",
+  "cat": "people",
+  "tags": [
+    "babies"
+  ],
+  "title": "[PLACEHOLDER] Baby / newborn session — gentle at-home portraits",
+  "title_short": "Baby Session",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Baby & Newborn Photography",
+  "summary": "[PLACEHOLDER] One or two sentences on a gentle baby/newborn session at home with the family. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/baby-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: the family, baby's age, safety and pacing around feeds and naps.",
+  "approach": "[PLACEHOLDER] How you planned and shot it: natural window light, safe posing, sibling/parent shots, working around baby's schedule.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Session length (hrs)"
+    },
+    {
+      "num": "[X]",
+      "label": "Setups"
+    },
+    {
+      "num": "[X]",
+      "label": "Delivered frames"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/baby-a/1.jpg",
+    "/assets/case-studies/baby-a/2.jpg",
+    "/assets/case-studies/baby-a/3.jpg",
+    "/assets/case-studies/baby-a/4.jpg",
+    "/assets/case-studies/baby-a/5.jpg",
+    "/assets/case-studies/baby-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}

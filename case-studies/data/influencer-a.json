@@ -1,0 +1,45 @@
+{
+  "slug": "influencer-a",
+  "category": "video",
+  "cat": "video people",
+  "tags": [
+    "influencer-marketing"
+  ],
+  "title": "[PLACEHOLDER] GraceYuki — micro-influencer marketing content",
+  "title_short": "GraceYuki Content",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Influencer Content, Video & Photo",
+  "summary": "[PLACEHOLDER] One or two sentences on photo and video content for GraceYuki's micro-influencer marketing work. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/influencer-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: the creator, the brand partners, deliverables per campaign and turnaround.",
+  "approach": "[PLACEHOLDER] How you planned and shot it: batching shoots, vertical-first framing, edits per platform.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Campaigns"
+    },
+    {
+      "num": "[X]",
+      "label": "Assets delivered"
+    },
+    {
+      "num": "[X]",
+      "label": "Turnaround (days)"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/influencer-a/1.jpg",
+    "/assets/case-studies/influencer-a/2.jpg",
+    "/assets/case-studies/influencer-a/3.jpg",
+    "/assets/case-studies/influencer-a/4.jpg",
+    "/assets/case-studies/influencer-a/5.jpg",
+    "/assets/case-studies/influencer-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}

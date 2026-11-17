@@ -1,0 +1,45 @@
+{
+  "slug": "community-event-a",
+  "category": "event",
+  "cat": "events",
+  "tags": [
+    "community-events"
+  ],
+  "title": "[PLACEHOLDER] Community event coverage — grassroots / association gathering",
+  "title_short": "Community Event",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Event Photography",
+  "summary": "[PLACEHOLDER] One or two sentences on coverage of a community or association event for their records and social channels. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/community-event-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: the organisation, what the event was for, programme highlights and how the photos would be used.",
+  "approach": "[PLACEHOLDER] How you planned and shot it: coverage plan around the programme, VIP/guest-of-honour moments, candid crowd energy.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Hours covered"
+    },
+    {
+      "num": "[X]",
+      "label": "Attendees"
+    },
+    {
+      "num": "[X]",
+      "label": "Delivered frames"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/community-event-a/1.jpg",
+    "/assets/case-studies/community-event-a/2.jpg",
+    "/assets/case-studies/community-event-a/3.jpg",
+    "/assets/case-studies/community-event-a/4.jpg",
+    "/assets/case-studies/community-event-a/5.jpg",
+    "/assets/case-studies/community-event-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}

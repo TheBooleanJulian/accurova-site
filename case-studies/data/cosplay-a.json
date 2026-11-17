@@ -1,0 +1,45 @@
+{
+  "slug": "cosplay-a",
+  "category": "portrait",
+  "cat": "people",
+  "tags": [
+    "cosplay"
+  ],
+  "title": "[PLACEHOLDER] Cosplay shoot — character portraits on location / at a convention",
+  "title_short": "Cosplay Shoot",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Cosplay Photography",
+  "summary": "[PLACEHOLDER] One or two sentences on a character cosplay shoot — on location or at a convention. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/cosplay-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: the cosplayer, the character and series, the reference poses/scenes and costume constraints.",
+  "approach": "[PLACEHOLDER] How you planned and shot it: matching location and lighting to the character, posing from references, effects done in post.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Characters"
+    },
+    {
+      "num": "[X]",
+      "label": "Setups"
+    },
+    {
+      "num": "[X]",
+      "label": "Delivered frames"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/cosplay-a/1.jpg",
+    "/assets/case-studies/cosplay-a/2.jpg",
+    "/assets/case-studies/cosplay-a/3.jpg",
+    "/assets/case-studies/cosplay-a/4.jpg",
+    "/assets/case-studies/cosplay-a/5.jpg",
+    "/assets/case-studies/cosplay-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}

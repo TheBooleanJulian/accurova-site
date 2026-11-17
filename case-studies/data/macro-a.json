@@ -1,0 +1,45 @@
+{
+  "slug": "macro-a",
+  "category": "creative",
+  "cat": "creative",
+  "tags": [
+    "macro"
+  ],
+  "title": "[PLACEHOLDER] Macro photography — close-up detail / nature study",
+  "title_short": "Macro Study",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Macro Photography",
+  "summary": "[PLACEHOLDER] One or two sentences on a close-up macro study — nature, product detail or texture. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/macro-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: the subject, why macro, and the challenges (depth of field, movement, light).",
+  "approach": "[PLACEHOLDER] How you planned and shot it: lens and lighting, focus stacking, stabilising the subject.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Subjects"
+    },
+    {
+      "num": "[X]",
+      "label": "Stacked frames"
+    },
+    {
+      "num": "[X]",
+      "label": "Final images"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/macro-a/1.jpg",
+    "/assets/case-studies/macro-a/2.jpg",
+    "/assets/case-studies/macro-a/3.jpg",
+    "/assets/case-studies/macro-a/4.jpg",
+    "/assets/case-studies/macro-a/5.jpg",
+    "/assets/case-studies/macro-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}

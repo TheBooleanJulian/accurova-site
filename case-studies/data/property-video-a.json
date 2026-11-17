@@ -1,0 +1,46 @@
+{
+  "slug": "property-video-a",
+  "category": "video",
+  "cat": "video commercial",
+  "tags": [
+    "property-videography",
+    "property"
+  ],
+  "title": "[PLACEHOLDER] Property videography — walkthrough video for listing",
+  "title_short": "Property Walkthrough",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Property Videography, Walkthrough Video",
+  "summary": "[PLACEHOLDER] One or two sentences on a property walkthrough video for listing platforms and socials. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/property-video-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: the property and agency, listing timeline and platforms.",
+  "approach": "[PLACEHOLDER] How you planned and shot it: gimbal walkthrough route, lighting room to room, edit length and music.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Rooms covered"
+    },
+    {
+      "num": "[X]",
+      "label": "Video length (min)"
+    },
+    {
+      "num": "[X]",
+      "label": "Turnaround (days)"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/property-video-a/1.jpg",
+    "/assets/case-studies/property-video-a/2.jpg",
+    "/assets/case-studies/property-video-a/3.jpg",
+    "/assets/case-studies/property-video-a/4.jpg",
+    "/assets/case-studies/property-video-a/5.jpg",
+    "/assets/case-studies/property-video-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}

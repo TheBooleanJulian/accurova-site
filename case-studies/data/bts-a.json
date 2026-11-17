@@ -1,0 +1,45 @@
+{
+  "slug": "bts-a",
+  "category": "event",
+  "cat": "events",
+  "tags": [
+    "bts"
+  ],
+  "title": "[PLACEHOLDER] Behind-the-scenes coverage — production / rehearsal BTS stills",
+  "title_short": "Behind the Scenes",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "BTS Photography",
+  "summary": "[PLACEHOLDER] One or two sentences on behind-the-scenes stills for a production, shoot or rehearsal. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/bts-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: the production, what the BTS was for (press kit, socials, crowdfunding) and access constraints.",
+  "approach": "[PLACEHOLDER] How you planned and shot it: staying out of frame and out of the way, silent shutter, key crew moments to capture.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Shoot days"
+    },
+    {
+      "num": "[X]",
+      "label": "Delivered frames"
+    },
+    {
+      "num": "[X]",
+      "label": "Turnaround (days)"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/bts-a/1.jpg",
+    "/assets/case-studies/bts-a/2.jpg",
+    "/assets/case-studies/bts-a/3.jpg",
+    "/assets/case-studies/bts-a/4.jpg",
+    "/assets/case-studies/bts-a/5.jpg",
+    "/assets/case-studies/bts-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}
