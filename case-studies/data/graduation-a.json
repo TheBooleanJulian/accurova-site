@@ -1,0 +1,45 @@
+{
+  "slug": "graduation-a",
+  "category": "event",
+  "cat": "events",
+  "tags": [
+    "graduation"
+  ],
+  "title": "[PLACEHOLDER] Graduation portraits — campus session in gown & with family",
+  "title_short": "Graduation Portraits",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Portrait Photography, Graduation",
+  "summary": "[PLACEHOLDER] One or two sentences on a graduation portrait session on campus, solo and with family/friends. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/graduation-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: the graduate, school/campus, group size, and the shots they absolutely wanted.",
+  "approach": "[PLACEHOLDER] How you planned and shot it: campus spots chosen, crowd/timing around convocation, group vs solo sequence.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "People photographed"
+    },
+    {
+      "num": "[X]",
+      "label": "Locations"
+    },
+    {
+      "num": "[X]",
+      "label": "Delivered frames"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/graduation-a/1.jpg",
+    "/assets/case-studies/graduation-a/2.jpg",
+    "/assets/case-studies/graduation-a/3.jpg",
+    "/assets/case-studies/graduation-a/4.jpg",
+    "/assets/case-studies/graduation-a/5.jpg",
+    "/assets/case-studies/graduation-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}

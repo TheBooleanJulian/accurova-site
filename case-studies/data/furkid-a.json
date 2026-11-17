@@ -1,0 +1,45 @@
+{
+  "slug": "furkid-a",
+  "category": "portrait",
+  "cat": "people",
+  "tags": [
+    "furkids"
+  ],
+  "title": "[PLACEHOLDER] Furkid portraits — pet session at home or outdoors",
+  "title_short": "Furkid Portraits",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Pet Photography",
+  "summary": "[PLACEHOLDER] One or two sentences on a pet portrait session — solo pet and with their humans. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/furkid-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: the pet(s), temperament, location and the personality the owner wanted captured.",
+  "approach": "[PLACEHOLDER] How you planned and shot it: treats/toys for attention, fast shutter for movement, eye-level angles.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Pets"
+    },
+    {
+      "num": "[X]",
+      "label": "Locations"
+    },
+    {
+      "num": "[X]",
+      "label": "Delivered frames"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/furkid-a/1.jpg",
+    "/assets/case-studies/furkid-a/2.jpg",
+    "/assets/case-studies/furkid-a/3.jpg",
+    "/assets/case-studies/furkid-a/4.jpg",
+    "/assets/case-studies/furkid-a/5.jpg",
+    "/assets/case-studies/furkid-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}

@@ -25,10 +25,14 @@ OUT_DIR = ROOT / "case-studies"
 PAGE_TEMPLATE = (OUT_DIR / "template.html").read_text(encoding="utf-8")
 INDEX_TEMPLATE = (OUT_DIR / "index-template.html").read_text(encoding="utf-8")
 
-CATEGORY_LABEL = {"event": "Event", "portrait": "Portrait", "product": "Product", "property": "Property"}
+CATEGORY_LABEL = {"event": "Event", "portrait": "Portrait", "product": "Product", "property": "Property",
+                  "commercial": "Commercial", "sports": "Sports", "aerial": "Aerial", "creative": "Creative",
+                  "video": "Video"}
 
 # Fallback top-level filter category when a JSON file has no "cat" of its own.
-CAT_DEFAULT = {"event": "events", "portrait": "people", "product": "commercial", "property": "commercial"}
+CAT_DEFAULT = {"event": "events", "portrait": "people", "product": "commercial", "property": "commercial",
+               "commercial": "commercial", "sports": "sports", "aerial": "aerial", "creative": "creative",
+               "video": "video"}
 
 # Two-level filter shown on /case-studies/. Sub-filters are (label, slug); a slug of
 # None marks one as "coming soon" (rendered disabled). An entry's "cat" and "tags"

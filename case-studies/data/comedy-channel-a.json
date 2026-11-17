@@ -1,0 +1,45 @@
+{
+  "slug": "comedy-channel-a",
+  "category": "video",
+  "cat": "video",
+  "tags": [
+    "comedy-channel"
+  ],
+  "title": "[PLACEHOLDER] ChuckleClips — comedy channel production",
+  "title_short": "ChuckleClips",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Video Production, Comedy Content",
+  "summary": "[PLACEHOLDER] One or two sentences on shooting and editing for the ChuckleClips comedy channel. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/comedy-channel-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: the channel, the format, posting cadence and what makes a clip land.",
+  "approach": "[PLACEHOLDER] How you planned and shot it: shoot setup, multi-take workflow, edit pacing, captions and posting.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Episodes"
+    },
+    {
+      "num": "[X]",
+      "label": "Views"
+    },
+    {
+      "num": "[X]",
+      "label": "Posting cadence"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/comedy-channel-a/1.jpg",
+    "/assets/case-studies/comedy-channel-a/2.jpg",
+    "/assets/case-studies/comedy-channel-a/3.jpg",
+    "/assets/case-studies/comedy-channel-a/4.jpg",
+    "/assets/case-studies/comedy-channel-a/5.jpg",
+    "/assets/case-studies/comedy-channel-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}

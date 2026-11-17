@@ -1,0 +1,45 @@
+{
+  "slug": "proposal-a",
+  "category": "event",
+  "cat": "events",
+  "tags": [
+    "proposals"
+  ],
+  "title": "[PLACEHOLDER] Surprise proposal — hidden-camera coverage & couple portraits",
+  "title_short": "Surprise Proposal",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Proposal Photography",
+  "summary": "[PLACEHOLDER] One or two sentences on a surprise proposal captured discreetly, followed by a short couple-portrait session. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/proposal-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: where it happened, how the surprise was kept, the signal plan and what could go wrong.",
+  "approach": "[PLACEHOLDER] How you planned and shot it: hiding position, lens choice for distance, backup angle, the portrait session right after.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Shooters"
+    },
+    {
+      "num": "[X]",
+      "label": "Delivered frames"
+    },
+    {
+      "num": "[X]",
+      "label": "Turnaround (days)"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/proposal-a/1.jpg",
+    "/assets/case-studies/proposal-a/2.jpg",
+    "/assets/case-studies/proposal-a/3.jpg",
+    "/assets/case-studies/proposal-a/4.jpg",
+    "/assets/case-studies/proposal-a/5.jpg",
+    "/assets/case-studies/proposal-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}
