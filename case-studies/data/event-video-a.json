@@ -1,0 +1,45 @@
+{
+  "slug": "event-video-a",
+  "category": "video",
+  "cat": "video events",
+  "tags": [
+    "event-videography"
+  ],
+  "title": "[PLACEHOLDER] Event videography — highlight reel & full coverage",
+  "title_short": "Event Highlight Reel",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Event Videography, Highlight Reel",
+  "summary": "[PLACEHOLDER] One or two sentences on event video coverage cut into a highlight reel. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/event-video-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: the event, the reel length/format and where it would be posted.",
+  "approach": "[PLACEHOLDER] How you planned and shot it: camera setup, audio capture, b-roll list, edit style and delivery formats.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Cameras"
+    },
+    {
+      "num": "[X]",
+      "label": "Reel length (min)"
+    },
+    {
+      "num": "[X]",
+      "label": "Turnaround (days)"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/event-video-a/1.jpg",
+    "/assets/case-studies/event-video-a/2.jpg",
+    "/assets/case-studies/event-video-a/3.jpg",
+    "/assets/case-studies/event-video-a/4.jpg",
+    "/assets/case-studies/event-video-a/5.jpg",
+    "/assets/case-studies/event-video-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}

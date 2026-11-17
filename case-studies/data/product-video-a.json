@@ -1,0 +1,46 @@
+{
+  "slug": "product-video-a",
+  "category": "video",
+  "cat": "video commercial",
+  "tags": [
+    "product-videography",
+    "product"
+  ],
+  "title": "[PLACEHOLDER] Product videography — short-form product spots",
+  "title_short": "Product Video",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Product Videography",
+  "summary": "[PLACEHOLDER] One or two sentences on short-form product videos for ads, listings or socials. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/product-video-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: the brand, the products, platforms and aspect ratios needed.",
+  "approach": "[PLACEHOLDER] How you planned and shot it: set and lighting, motion (sliders, turntable), edit and versions per platform.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Products"
+    },
+    {
+      "num": "[X]",
+      "label": "Videos delivered"
+    },
+    {
+      "num": "[X]",
+      "label": "Aspect ratios"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/product-video-a/1.jpg",
+    "/assets/case-studies/product-video-a/2.jpg",
+    "/assets/case-studies/product-video-a/3.jpg",
+    "/assets/case-studies/product-video-a/4.jpg",
+    "/assets/case-studies/product-video-a/5.jpg",
+    "/assets/case-studies/product-video-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}

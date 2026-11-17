@@ -1,0 +1,45 @@
+{
+  "slug": "sports-a",
+  "category": "sports",
+  "cat": "sports",
+  "tags": [
+    "sports"
+  ],
+  "title": "[PLACEHOLDER] Sports coverage — match / tournament action photography",
+  "title_short": "Sports Coverage",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Sports Photography",
+  "summary": "[PLACEHOLDER] One or two sentences on action coverage of a match or tournament. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/sports-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: the team/organiser, the sport, venue lighting and what they needed (action, team photos, podium).",
+  "approach": "[PLACEHOLDER] How you planned and shot it: positioning on the field/court, long glass, shutter speeds for the action, team-photo slot.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Matches covered"
+    },
+    {
+      "num": "[X]",
+      "label": "Delivered frames"
+    },
+    {
+      "num": "[X]",
+      "label": "Turnaround (days)"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/sports-a/1.jpg",
+    "/assets/case-studies/sports-a/2.jpg",
+    "/assets/case-studies/sports-a/3.jpg",
+    "/assets/case-studies/sports-a/4.jpg",
+    "/assets/case-studies/sports-a/5.jpg",
+    "/assets/case-studies/sports-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "astro-a",
+  "category": "creative",
+  "cat": "creative",
+  "tags": [
+    "astrophotos"
+  ],
+  "title": "[PLACEHOLDER] Astrophotography — night-sky / deep-sky imaging session",
+  "title_short": "Astrophotography",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Astrophotography",
+  "summary": "[PLACEHOLDER] One or two sentences on a night-sky or deep-sky imaging session and the processed result. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/astro-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: the target (Milky Way, nebula, eclipse, etc.), location and light pollution, weather window.",
+  "approach": "[PLACEHOLDER] How you planned and shot it: gear and tracking, exposure plan and integration time, stacking and processing.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Hours of integration"
+    },
+    {
+      "num": "[X]",
+      "label": "Subframes"
+    },
+    {
+      "num": "[X]",
+      "label": "Final images"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/astro-a/1.jpg",
+    "/assets/case-studies/astro-a/2.jpg",
+    "/assets/case-studies/astro-a/3.jpg",
+    "/assets/case-studies/astro-a/4.jpg",
+    "/assets/case-studies/astro-a/5.jpg",
+    "/assets/case-studies/astro-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}

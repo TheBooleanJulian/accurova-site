@@ -1,0 +1,45 @@
+{
+  "slug": "underwater-a",
+  "category": "sports",
+  "cat": "sports",
+  "tags": [
+    "underwater"
+  ],
+  "title": "[PLACEHOLDER] Underwater shoot — in-pool / open-water photography",
+  "title_short": "Underwater Shoot",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Underwater Photography",
+  "summary": "[PLACEHOLDER] One or two sentences on an underwater session — in a pool or open water. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/underwater-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: the subject (swimmer, diver, model, product), the location and water conditions.",
+  "approach": "[PLACEHOLDER] How you planned and shot it: housing and lens choice, lighting underwater, breath-hold timing with the subject.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Dives / sessions"
+    },
+    {
+      "num": "[X]",
+      "label": "Setups"
+    },
+    {
+      "num": "[X]",
+      "label": "Delivered frames"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/underwater-a/1.jpg",
+    "/assets/case-studies/underwater-a/2.jpg",
+    "/assets/case-studies/underwater-a/3.jpg",
+    "/assets/case-studies/underwater-a/4.jpg",
+    "/assets/case-studies/underwater-a/5.jpg",
+    "/assets/case-studies/underwater-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}

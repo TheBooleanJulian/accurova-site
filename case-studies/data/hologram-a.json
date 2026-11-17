@@ -1,0 +1,45 @@
+{
+  "slug": "hologram-a",
+  "category": "aerial",
+  "cat": "aerial",
+  "tags": [
+    "holograms"
+  ],
+  "title": "[PLACEHOLDER] Hologram capture — volumetric / holographic content shoot",
+  "title_short": "Hologram Capture",
+  "client": "[Client name]",
+  "location": "[Venue / area, Singapore]",
+  "date": "2026-01-01",
+  "date_display": "[Month Year]",
+  "services": "Hologram / Volumetric Capture",
+  "summary": "[PLACEHOLDER] One or two sentences on a hologram / volumetric capture for display or activation use. This shows up in link previews.",
+  "cover_image": "/assets/case-studies/hologram-a/cover.jpg",
+  "challenge": "[PLACEHOLDER] The brief: the client, the display/activation it was for, and the technical constraints of the format.",
+  "approach": "[PLACEHOLDER] How you planned and shot it: capture setup, subject direction, processing pipeline into the final hologram.",
+  "behind_the_scenes": "[PLACEHOLDER] A specific, human anecdote from the day, something only you would know.",
+  "ai_workflow": "[PLACEHOLDER] Which AI-assisted culling / retouch / asset steps saved time on this job, if any. Delete the idea if none.",
+  "results": [
+    {
+      "num": "[X]",
+      "label": "Captures"
+    },
+    {
+      "num": "[X]",
+      "label": "Final assets"
+    },
+    {
+      "num": "[X]",
+      "label": "Turnaround (days)"
+    }
+  ],
+  "gallery": [
+    "/assets/case-studies/hologram-a/1.jpg",
+    "/assets/case-studies/hologram-a/2.jpg",
+    "/assets/case-studies/hologram-a/3.jpg",
+    "/assets/case-studies/hologram-a/4.jpg",
+    "/assets/case-studies/hologram-a/5.jpg",
+    "/assets/case-studies/hologram-a/6.jpg"
+  ],
+  "testimonial_quote": "[PLACEHOLDER] Real client quote, specific, not generic praise.",
+  "testimonial_author": "[Name, Title, Company]"
+}
