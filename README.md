@@ -113,6 +113,7 @@ See [markdown/STATUS.md](markdown/STATUS.md) — kept current there rather than 
 
 ## Changelog
 
+- **2026-11-17** — Homepage re-laid-out after custore.co's section flow (centred hero → coverflow reel → stats → proof → bento → before/after → case studies → winding 4-step path → comparison table → testimonial slider → quote form → logo CTA), keeping Accurova's own palette and type and only existing, real content. The quote form has no backend: it opens a pre-filled WhatsApp message or email. Placeholder "Insights" section dropped (and its Resources/Guides links); footer regrouped into Explore / Company / Reach us across all pages. Homepage styles are the `h-` block at the end of `assets/style.css`
 - **2026-09-29** — Case studies now supersede the portfolio: the two-level category filter moved to `/case-studies/`, `/portfolio/*` became redirect stubs, and the nav, footer, homepage, 404, sitemap and case-study templates point at Case Studies
 - **2026-09-28** — Simplified the header (9 links + 2 CTAs → 4 grouped items + 1 CTA, working mobile menu); portfolio filter reorganised into 9 top-level categories with sub-filters incl. Video; portfolio meta/title and footer updated to match
 - **2026-09-28** — Consolidated planning docs into `markdown/PLAN.md` + `markdown/STATUS.md`; promoted About/Pricing/Contact/Testimonials to dedicated pages; fixed the Zeabur/Caddy 404 routing bug; corrected the SME500 Award 2026 accreditation (real, verified) and added the real UEN
